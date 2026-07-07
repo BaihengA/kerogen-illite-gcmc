@@ -1,0 +1,56 @@
+path,probable_stage,relevance_keywords,priority,recommended_action,notes
+00_CHECK_ENVIRONMENT.bat,unclassified,,LOW,retain as unknown; do not delete,No definitive runtime evidence found in static audit.
+01_BUILD_BULK_0P1.bat,bulk density,bulk;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_BULK/02_MDP/00_em.mdp,bulk density,bulk;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_BULK/02_MDP/01_nvt_01_300K.mdp,bulk density,bulk;nvt;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_BULK/02_MDP/01_nvt_02_600K.mdp,bulk density,bulk;nvt;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_BULK/02_MDP/01_nvt_03_900K.mdp,bulk density,bulk;nvt;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_BULK/02_MDP/03_nvt_lock_900K.mdp,bulk density,bulk;nvt;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_BULK/03_RUN/mdout.mdp,bulk density,bulk;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_BULK/BULK_BUILD_REPORT.json,bulk density,bulk;density;graphene;kerogen,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/apply_graphene_patch_settings.py,graphene pressing,graphene,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/collect_gcmc_counts.py,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/collect_standard_plate_metrics.py,graphene pressing,graphene;kerogen,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/common.py,water model,,LOW,retain as unknown; do not delete,No definitive runtime evidence found in static audit.
+01_SCRIPTS/diagnose_raspa2_wsl_v36.py,RASPA2 GCMC,8nm;gcmc;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/generate_wall_mdps.py,rough surface,rough,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/gro_tools.py,rough surface,rough,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/prepare_bulk.py,bulk density,bulk;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/prepare_raspa2_gcmc.py,8nm mirrored pore,8nm;gcmc;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/run_raspa2_cases.py,8nm mirrored pore,8nm;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/run_wall_case.py,graphene pressing,graphene,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+01_SCRIPTS/set_config_value.py,unclassified,,LOW,retain as unknown; do not delete,No definitive runtime evidence found in static audit.
+01_SCRIPTS/wsl_raspa_utils_v36.py,RASPA2 GCMC,gcmc;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+02_RUN_BULK_TO_0P8.bat,bulk density,bulk;density,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+03_BUILD_GRAPHENE_CASES.bat,graphene pressing,graphene,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+04_GENERATE_GRAPHENE_MDP.bat,graphene pressing,graphene,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+13_COLLECT_STANDARD_PLATE_METRICS.bat,unclassified,,LOW,retain as unknown; do not delete,No definitive runtime evidence found in static audit.
+24_BUILD_ILLITE_UNDER_KEROGEN_ALL.bat,illite wall,kerogen;illite,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+43_BUILD_4NM_COMPOSITE_PORES.bat,8nm mirrored pore,8nm;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+44_PREPARE_RASPA2_GCMC.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+45_RUN_RASPA2_GCMC.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+46_COLLECT_GCMC_COUNTS.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+47_ALL_BUILD_PREP_RUN_COLLECT.bat,8nm mirrored pore,8nm,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+50_RUN_RASPA2_GCMC_8NM.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+52_ALL_8NM_BUILD_PREP_RUN_COLLECT.bat,8nm mirrored pore,8nm,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+53_DIAGNOSE_RASPA2_WSL_V34.bat,8nm mirrored pore,8nm;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+54_PREPARE_RASPA2_GCMC_8NM_V34.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+55_RUN_RASPA2_GCMC_8NM_V34_WSL.bat,8nm mirrored pore,8nm;gcmc;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+56_DIAGNOSE_RASPA2_WSL_V35_ENCODING_SAFE.bat,8nm mirrored pore,8nm;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+57_PREPARE_RASPA2_GCMC_8NM_V35_ENCODING_SAFE.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+58_RUN_RASPA2_GCMC_8NM_V35_WSL_ENCODING_SAFE.bat,8nm mirrored pore,8nm;gcmc;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+59_COLLECT_GCMC_COUNTS_8NM_V35.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+60_DIAGNOSE_RASPA2_WSL_V36_AUTODISCOVER.bat,8nm mirrored pore,8nm;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+61_PREPARE_RASPA2_GCMC_8NM_V36_AUTODISCOVER.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+62_RUN_RASPA2_GCMC_8NM_V36_WSL.bat,8nm mirrored pore,8nm;gcmc;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+63_COLLECT_GCMC_COUNTS_8NM_V36.bat,8nm mirrored pore,8nm;gcmc;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+64_ALL_8NM_GCMC_V36.bat,8nm mirrored pore,8nm;gcmc,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+CHANGELOG.md,8nm mirrored pore,8nm,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+FILE_INVENTORY_SHA256.txt,graphene pressing,graphene,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+GITHUB_WORKFLOW.md,8nm mirrored pore,8nm,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+postprocess_config.json,unclassified,,LOW,retain as unknown; do not delete,No definitive runtime evidence found in static audit.
+RASPA2_WSL_DIAGNOSTIC_V36.txt,RASPA2 GCMC,gcmc;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+README_V35_ENCODING_FIX.md,8nm mirrored pore,8nm;raspa;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+README_V36_WSL_AUTODISCOVERY.md,8nm mirrored pore,8nm;wsl,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+RELEASE_MANIFEST_SHA256.json,8nm mirrored pore,8nm;raspa,HIGH,manual provenance review before archival,No definitive runtime evidence found in static audit.
+requirements.txt,unclassified,,LOW,retain as unknown; do not delete,Short text file with insufficient provenance.

@@ -1,0 +1,15 @@
+{
+  "source_root": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1",
+  "generated_at": "2026-07-06T15:00:41",
+  "inventory": "docs/audit/CODE_INVENTORY.csv",
+  "status_counts": {
+    "ACTIVE": 81,
+    "BROKEN": 0,
+    "DUPLICATE": 233,
+    "EXPERIMENTAL": 7,
+    "REQUIRED_LEGACY": 0,
+    "SUPERSEDED": 6,
+    "UNKNOWN": 55
+  },
+  "coordinate_policy": "RAW_KEEP_COORDINATES and final production coordinates are immutable inputs."
+}

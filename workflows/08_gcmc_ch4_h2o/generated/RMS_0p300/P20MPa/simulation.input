@@ -1,0 +1,35 @@
+SimulationType MonteCarlo
+NumberOfCycles 10
+NumberOfInitializationCycles 10
+PrintEvery 10
+
+Forcefield Local
+RemoveAtomNumberCodeFromLabel yes
+UseChargesFromCIFFile yes
+ChargeMethod Ewald
+CutOff 12.0
+
+FrameworkName RMS_0p300_Pore8nm
+UnitCells 1 1 1
+
+ExternalTemperature 353.15
+ExternalPressure 20000000
+
+Component 0 MoleculeName methane
+ MoleculeDefinition ExampleDefinitions
+ MolFraction 0.997636645934322
+ FugacityCoefficient 0.8439459552
+ TranslationProbability 0.5
+ ReinsertionProbability 0.5
+ SwapProbability 1.0
+ CreateNumberOfMolecules 0
+
+Component 1 MoleculeName H2O
+ MoleculeDefinition Local
+ MolFraction 0.0023633540656784
+ FugacityCoefficient 1.1266978304747
+ TranslationProbability 0.5
+ RotationProbability 0.5
+ ReinsertionProbability 0.5
+ SwapProbability 1.0
+ CreateNumberOfMolecules 0

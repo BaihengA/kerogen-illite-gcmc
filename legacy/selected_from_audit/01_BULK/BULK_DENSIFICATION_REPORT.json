@@ -1,0 +1,7 @@
+{
+  "final_gro": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\01_BULK\\03_RUN\\bulk_density_0p8_final.gro",
+  "final_density_g_cm3": 0.795765904254916,
+  "target_density_g_cm3": 0.8,
+  "compression_chunks_completed": 43,
+  "summary_csv": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\01_BULK\\03_RUN\\BULK_DENSITY_SUMMARY.csv"
+}

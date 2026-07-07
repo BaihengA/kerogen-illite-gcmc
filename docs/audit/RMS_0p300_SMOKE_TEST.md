@@ -1,0 +1,14 @@
+# RMS_0p300 Smoke Test
+
+status: FAIL
+
+RASPA execution was not started because the canonical run directory is incomplete.
+
+Missing files:
+- F:\MD\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\KEROGEN_MD_GCMC_CODEBASE\workflows\08_gcmc_ch4_h2o\generated\RMS_0p300\P20MPa\force_field_mixing_rules.def
+- F:\MD\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\KEROGEN_MD_GCMC_CODEBASE\workflows\08_gcmc_ch4_h2o\generated\RMS_0p300\P20MPa\pseudo_atoms.def
+- F:\MD\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\KEROGEN_MD_GCMC_CODEBASE\workflows\08_gcmc_ch4_h2o\generated\RMS_0p300\P20MPa\force_field.def
+- F:\MD\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\KEROGEN_MD_GCMC_CODEBASE\workflows\08_gcmc_ch4_h2o\generated\RMS_0p300\P20MPa\H2O.def
+- F:\MD\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\KEROGEN_MD_GCMC_CODEBASE\workflows\08_gcmc_ch4_h2o\generated\RMS_0p300\P20MPa\RMS_0p300_Pore8nm.cif
+
+This is a smoke-test failure, not a production result.

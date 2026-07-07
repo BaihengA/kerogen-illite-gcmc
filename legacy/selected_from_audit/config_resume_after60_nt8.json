@@ -1,0 +1,174 @@
+{
+  "project_name": "KEROGEN_BULK_0P1_TO_0P8_THEN_GRAPHENE_PULL",
+  "gromacs_exe": "F:\\gromacs some software\\gmx2018.8\\bin\\gmx.exe",
+  "packmol_exe": "packmol",
+  "molecule_count": 48,
+  "initial_bulk_density_g_cm3": 0.1,
+  "target_bulk_density_g_cm3": 0.8,
+  "target_density_stop_g_cm3": 0.795,
+  "maximum_density_g_cm3": 0.86,
+  "replication_hint": {
+    "nx": 4,
+    "ny": 4,
+    "nz": 3
+  },
+  "packmol_tolerance_angstrom": 2.0,
+  "packmol_seed": 20260626,
+  "bulk_nvt_schedule": [
+    {
+      "temperature_K": 300.0,
+      "time_ps": 20.0,
+      "dt_ps": 0.0005
+    },
+    {
+      "temperature_K": 600.0,
+      "time_ps": 30.0,
+      "dt_ps": 0.0005
+    },
+    {
+      "temperature_K": 900.0,
+      "time_ps": 300.0,
+      "dt_ps": 0.001
+    }
+  ],
+  "bulk_compression_temperature_K": 900.0,
+  "bulk_compression_chunk_ps": 50.0,
+  "bulk_compression_dt_ps": 0.0005,
+  "bulk_compression_max_chunks": 80,
+  "bulk_compression_tau_p_ps": 20.0,
+  "bulk_compressibility_bar_inv": 4.5e-05,
+  "bulk_final_lock_nvt_ps": 500.0,
+  "wall_clearance_nm": 0.5,
+  "outer_periodic_margin_nm": 2.0,
+  "top_piston_side_clearance_nm": 0.3,
+  "graphene_cc_bond_nm": 0.142,
+  "graphene_edge_trim_nm": 0.18,
+  "graphene_atom_type": "opls_147",
+  "graphene_bond_k_kj_mol_nm2": 2500000.0,
+  "graphene_angle_k_kj_mol_rad2": 12000.0,
+  "top_roughness_rms_nm": [
+    0.3,
+    0.6,
+    0.9
+  ],
+  "roughness_seed": 20260626,
+  "wall_nvt_temperature_K": 900.0,
+  "wall_nvt_time_ps": 3.0,
+  "pull_ramp": [
+    {
+      "pressure_MPa": 20.0,
+      "time_ps": 25.0
+    },
+    {
+      "pressure_MPa": 40.0,
+      "time_ps": 30.0
+    },
+    {
+      "pressure_MPa": 60.0,
+      "time_ps": 35.0
+    }
+  ],
+  "pull_annealing": [
+    {
+      "temperature_K": 700.0,
+      "pressure_MPa": 70.0,
+      "time_ps": 50.0
+    },
+    {
+      "temperature_K": 500.0,
+      "pressure_MPa": 80.0,
+      "time_ps": 50.0
+    }
+  ],
+  "wall_md_dt_ps": 0.0002,
+  "omp_threads": 8,
+  "pinning": "off",
+  "maxwarn": 5,
+  "safety": {
+    "minimum_box_length_nm": 3.0,
+    "minimum_periodic_image_surface_gap_nm": 1.4,
+    "minimum_physical_wall_gap_nm": 0.8,
+    "maximum_upward_top_motion_per_stage_nm": 0.2
+  },
+  "backup_existing_graphene_cases": false,
+  "wall_shape_lock": {
+    "enabled": true,
+    "description": "Patch v17: no PBC split + pull COM safe box; stronger rough GTOP rigidity; no coordinate repair.",
+    "fixed_wall_posres_k_kj_mol_nm2": 5000000.0,
+    "gtop_nvt_posres_k_kj_mol_nm2": 6000000.0,
+    "gtop_pull_xy_posres_k_kj_mol_nm2": 6000000.0,
+    "gtop_pull_z_shape_k_kj_mol_nm2": 0.0,
+    "repair_after_each_stage": false,
+    "repair_fixed_walls_to_initial": false,
+    "repair_top_xy_to_initial": false,
+    "repair_top_z_shape_to_initial_offsets": false,
+    "top_rms_min_retention_fraction": 0.5,
+    "repair_chunk_ps": 0.0,
+    "collision_aware_repair": false,
+    "collision_xy_cutoff_nm": 0.22,
+    "collision_z_clearance_nm": 0.1,
+    "collision_max_upshift_nm": 0.25
+  },
+  "patch_note": "v19: one-time resume: continue RMS_0p300 after 02_pull_ramp_03_60MPa to annealing/NVT stages, then run full RMS_0p600 and RMS_0p900 without rebuilding cases.",
+  "skip_wall_nvt_stage": false,
+  "force_rerun_wall_cases": false,
+  "pull_force_scale": 5.0,
+  "diagnostics": {
+    "warn_if_final_top_displacement_less_than_nm": 0.1,
+    "warn_if_final_top_min_to_kerogen_p95_gap_greater_than_nm": 0.25
+  },
+  "compression_mode": "rigid_pressure",
+  "rigid_translate": {
+    "enabled": false,
+    "note": "Disabled in Patch v7; GTOP is driven by constant-force pressure, not prescribed displacement."
+  },
+  "gtop_rigidity": {
+    "enabled": true,
+    "description": "Patch v17: stiffer rough graphene piston, enlarged box for pull COM, no coordinate repair.",
+    "extra_shape_bond_xy_cutoff_nm": 0.6,
+    "extra_shape_bond_min_xy_nm": 0.16,
+    "max_extra_shape_bonds_per_atom": 18,
+    "extra_shape_bond_k_kj_mol_nm2": 3500000.0
+  },
+  "md_stability": {
+    "constraints": "h-bonds",
+    "lincs_order": 8,
+    "lincs_iter": 4,
+    "nstlist": 10,
+    "nstxout_compressed": 1000
+  },
+  "wall_nvt_name": "01_wall_nvt_900K_3ps",
+  "standard_kerogen_plate": {
+    "enabled": true,
+    "description": "Patch v17: fixed final 12x12 plate; guarded mold translated to positive coordinates; enlarged simulation box to keep GTOP pull COM well-defined under PBC.",
+    "plate_length_x_nm": 12.0,
+    "plate_width_y_nm": 12.0,
+    "initial_kerogen_thickness_nm": 9.0,
+    "origin_x_nm": 2.0,
+    "origin_y_nm": 2.0,
+    "bottom_wall_z_nm": 2.0,
+    "bottom_wall_to_kerogen_gap_nm": 0.45,
+    "initial_top_valley_clearance_nm": 0.25,
+    "top_piston_side_clearance_nm": 0.03,
+    "top_wall_extra_height_nm": 0.4,
+    "whole_molecule_com_margin_nm": 0.0,
+    "max_selected_molecules": 1000000,
+    "output_bottom_padding_nm": 1.5,
+    "output_top_padding_nm": 3.0,
+    "output_box_z_nm": 15.0,
+    "surface_grid_nx": 50,
+    "surface_grid_ny": 50,
+    "acceptance_note": "For physical simulation use *_standard_kerogen_plate.gro. For checking edge holes use *_standard_kerogen_plate_PBC_VIEW_3x3.gro. Large internal holes mean density/thickness is still insufficient, not a pressure problem.",
+    "reject_molecule_if_any_atom_outside_mold": false,
+    "atom_boundary_margin_nm": 0.0,
+    "output_periodic_view_3x3": true,
+    "pbc_view_z_shift_nm": 0.0,
+    "wall_guard_xy_nm": 2.5,
+    "wall_atom_clearance_nm": 0.9,
+    "minimum_mold_origin_nm": 2.0,
+    "minimum_bottom_wall_z_nm": 2.0,
+    "pull_com_extra_box_padding_xy_nm": 10.0,
+    "pull_com_extra_box_padding_z_nm": 4.0
+  },
+  "wall_nvt_dt_ps": 0.0005
+}

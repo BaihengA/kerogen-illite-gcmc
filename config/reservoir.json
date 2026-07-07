@@ -1,0 +1,7 @@
+{
+  "components": [
+    "CH4",
+    "H2O"
+  ],
+  "requires_explicit_chemical_potentials": true
+}

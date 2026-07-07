@@ -1,0 +1,7 @@
+{
+  "project_root": "..",
+  "gromacs": "gmx",
+  "wsl_distro": "Ubuntu-22.04",
+  "raspa2_root": "/path/to/raspa2",
+  "raspa2_simulate": "/path/to/raspa2/bin/simulate"
+}

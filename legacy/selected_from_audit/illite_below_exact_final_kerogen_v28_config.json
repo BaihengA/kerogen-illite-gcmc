@@ -1,0 +1,35 @@
+{
+  "input_dir": "00_INPUT",
+  "output_dir": "ILLITE_BELOW_EXACT_FINAL_KEROGEN_V28",
+  "cases": [
+    "RMS_0p000",
+    "RMS_0p300",
+    "RMS_0p600",
+    "RMS_0p900"
+  ],
+
+  "kerogen_source_mode": "standard_exact",
+  "standard_exact_pattern": "KEROGEN_ONLY_FINALS/STANDARD_PLATES/{case}_kerogen_only_standard_plate.gro",
+  "raw_exact_pattern": "KEROGEN_ONLY_FINALS/RAW_KEEP_COORDINATES/{case}_kerogen_only_raw_from_final.gro",
+  "skip_missing_cases": true,
+
+  "illite_structure_file": "auto",
+  "illite_itp_file": "auto",
+
+  "strict_keep_kerogen_coordinates": true,
+
+  "illite_xy_fit_mode": "inside",
+  "illite_xy_margin_each_side_nm": 0.0,
+  "illite_max_overshoot_each_axis_nm": 0.15,
+  "auto_try_90deg_xy": true,
+  "max_repeat_per_axis": 80,
+
+  "illite_repeat_z": 1,
+  "gap_illite_top_to_kerogen_bottom_nm": 0.30,
+
+  "minimum_box_bottom_clearance_nm": 0.10,
+  "box_xy_extra_nm": 0.20,
+  "box_top_extra_nm": 1.00,
+
+  "notes": "V28 exact mode. Kerogen input coordinates, order and atom names are immutable. No flip, no center, no wrap, no standardization, no kerogen shift. Illite only is transformed and placed below the exact final kerogen plate. Default source is KEROGEN_ONLY_FINALS/STANDARD_PLATES. Change kerogen_source_mode to raw_exact to use RAW_KEEP_COORDINATES instead."
+}

@@ -1,0 +1,47 @@
+{
+  "temperature_K": 353.15,
+  "pressure_MPa": 20.0,
+  "mixture_mode": "water_saturated_methane",
+  "reservoir_reference": "external_real_water_reference",
+  "pore_water_model": "OPLS 3-site water from 00_INPUT/H2O.pdb and 00_INPUT/H2O.itp",
+  "y_CH4": 0.9976366459343216,
+  "y_H2O": 0.002363354065678398,
+  "phi_CH4": 0.8439459552,
+  "phi_H2O": 1.1266978304746957,
+  "f_CH4_Pa": 16839028.241911303,
+  "f_H2O_Pa": 53255.71796886805,
+  "CH4_method": "RASPA internal EOS methane fugacity coefficient proven by 0-cycle probe",
+  "H2O_method": "IAPWS-95 external compressed-liquid water fugacity, scaled by water_activity",
+  "reference_state": "compressed liquid water at T and P_total",
+  "pressure_correction": "IAPWS compressed-liquid fugacity includes pressure correction from saturation to P_total",
+  "water_activity": 1.0,
+  "iapws": {
+    "status": "PASS",
+    "package_name": "iapws",
+    "package_version": "1.5.5",
+    "module_path": "C:\\Users\\Administrator\\AppData\\Roaming\\Python\\Python311\\site-packages\\iapws\\iapws95.py",
+    "module_sha256": "89edb7c0e3b77533319d253819cdb4c1da50775d2e7b324249574607d6790520",
+    "calculation_path": "iapws.IAPWS95(T=temperature_K, x=0) for saturation cross-check; iapws.IAPWS95(T=temperature_K, P=pressure_MPa) for compressed-liquid external water reference fugacity",
+    "saturation_pressure_MPa": 0.04741447403016507,
+    "saturation_liquid_fugacity_MPa": 0.04697876476721047,
+    "compressed_liquid_pressure_MPa": 20.0,
+    "compressed_liquid_density_kg_m3": 980.4937110024749,
+    "compressed_liquid_fugacity_MPa": 0.05325571796886805,
+    "water_activity": 1.0,
+    "f_H2O_reference_Pa": 53255.71796886805,
+    "f_H2O_Pa": 53255.71796886805
+  },
+  "assumptions": [
+    "CH4 phi may be taken from RASPA EOS only when proven by RASPA output for this T/P/composition class.",
+    "water_saturated_methane means a water-saturated methane gas reservoir boundary in equilibrium with an external water reservoir.",
+    "The external water reservoir uses real-water thermodynamics; the pore molecule remains the user's OPLS 3-site water model.",
+    "Antoine Psat/P is retained only as a gas-composition/debug estimate and is not the production water fugacity source.",
+    "No silent fallback to phi=1 is allowed for production."
+  ],
+  "sources": [
+    "8nm_pore_raspa2_config.json",
+    "docs/provenance/RASPA_FUGACITY_BEHAVIOR.md",
+    "docs/provenance/IAPWS_WATER_REFERENCE_VALIDATION.md"
+  ],
+  "status": "PASS"
+}

@@ -1,0 +1,51 @@
+{
+  "case": "RMS_0p300",
+  "requested_rms_nm": 0.3,
+  "actual_rms_nm": 0.30000000000000027,
+  "top_min_shift_nm": -0.5133460298487394,
+  "top_max_shift_nm": 0.7031563125144967,
+  "top_mean_z_nm": 17.070118089546217,
+  "top_piston_span_x_nm": 17.29323,
+  "top_piston_span_y_nm": 16.94,
+  "projected_top_area_nm2": 292.94731620000005,
+  "top_atoms": 10732,
+  "bottom_pbcatom": 97680,
+  "top_pbcatom": 8411,
+  "box_nm": [
+    31.35323,
+    31.0,
+    25.579587027089705
+  ],
+  "wall_geometry_nm": {
+    "x0": 2.0,
+    "x1": 19.35323,
+    "y0": 2.0,
+    "y1": 19.0,
+    "z0": 2.0,
+    "z1": 19.579587027089705,
+    "target_x0": 4.85323,
+    "target_x1": 16.85323,
+    "target_y0": 4.5,
+    "target_y1": 16.5,
+    "note": "Patch v17: x0/x1/y0/y1 are temporary guarded mold walls; target_* is the shifted fixed standardized kerogen plate footprint. The whole system is translated if needed so walls do not cross PBC in visualization."
+  },
+  "standard_kerogen_plate": {
+    "standard_plate_enabled": true,
+    "plate_length_x_nm": 12.0,
+    "plate_width_y_nm": 12.0,
+    "initial_kerogen_thickness_nm": 9.0,
+    "bottom_wall_z_nm": 2.0,
+    "kerogen_z_min_nominal_nm": 2.45,
+    "kerogen_z_max_nominal_nm": 11.45,
+    "selected_molecule_count": 192,
+    "source_box_nm": [
+      8.12023,
+      8.4821,
+      5.04554
+    ],
+    "selection_rule": "periodic bulk tiling, whole molecules selected by COM inside fixed x/y/z slab"
+  },
+  "selected_kerogen_molecules": 192,
+  "atoms_per_kerogen_molecule": 481,
+  "bulk_source": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\01_BULK\\03_RUN\\bulk_density_0p8_final.gro"
+}

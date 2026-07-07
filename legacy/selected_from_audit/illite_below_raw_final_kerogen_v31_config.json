@@ -1,0 +1,30 @@
+{
+  "input_dir": "00_INPUT",
+  "output_dir": "ILLITE_BELOW_RAW_FINAL_KEROGEN_V31_THICKER_SAFE",
+  "cases": [
+    "RMS_0p000",
+    "RMS_0p300",
+    "RMS_0p600",
+    "RMS_0p900"
+  ],
+  "kerogen_source_mode": "raw_exact",
+  "raw_exact_pattern": "KEROGEN_ONLY_FINALS/RAW_KEEP_COORDINATES/{case}_kerogen_only_raw_from_final.gro",
+  "standard_exact_pattern": "KEROGEN_ONLY_FINALS/STANDARD_PLATES/{case}_kerogen_only_standard_plate.gro",
+  "skip_missing_cases": true,
+  "illite_structure_file": "auto",
+  "illite_itp_file": "auto",
+  "strict_keep_kerogen_coordinates": true,
+  "illite_xy_fit_mode": "inside",
+  "illite_xy_margin_each_side_nm": 0.0,
+  "illite_max_overshoot_each_axis_nm": 0.15,
+  "auto_try_90deg_xy": true,
+  "max_repeat_per_axis": 80,
+  "illite_repeat_z": 2,
+  "gap_illite_top_to_kerogen_bottom_nm": 0.3,
+  "minimum_box_bottom_clearance_nm": 0.02,
+  "box_xy_extra_nm": 0.2,
+  "box_top_extra_nm": 1.0,
+  "notes": "V31 reads ONLY RAW_KEEP_COORDINATES exact final kerogen. Kerogen coordinates/order/names are immutable. Illite z repeat remains 2. Fix: accept small positive lower clearance (default 0.02 nm) and, only if necessary, reduce interface gap without moving kerogen. No flip, no center, no wrap, no standardization, no kerogen shift.",
+  "auto_reduce_gap_to_fit_without_moving_kerogen": true,
+  "minimum_allowed_interface_gap_nm": 0.2
+}

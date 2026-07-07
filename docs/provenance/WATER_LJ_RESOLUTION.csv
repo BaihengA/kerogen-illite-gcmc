@@ -1,0 +1,4 @@
+water_atom_index,water_atom_name,gromacs_atom_type,charge,mass,lj_source_file,sigma_nm,epsilon_kJ_mol,resolution_status,notes
+1,OW,opls_116,-0.82,15.99940,F:\gromacs some software\gmx2018.8\share\gromacs\top\oplsaa.ff\ffnonbonded.itp,3.16557e-01,6.50194e-01,PASS,selected non-HEAVY_H OPLS-AA branch; H2O.itp does not define HEAVY_H
+2,HW1,opls_117,0.41,1.00800,F:\gromacs some software\gmx2018.8\share\gromacs\top\oplsaa.ff\ffnonbonded.itp,0.00000e+00,0.00000e+00,PASS,selected non-HEAVY_H OPLS-AA branch; H2O.itp does not define HEAVY_H
+3,HW2,opls_117,0.41,1.00800,F:\gromacs some software\gmx2018.8\share\gromacs\top\oplsaa.ff\ffnonbonded.itp,0.00000e+00,0.00000e+00,PASS,selected non-HEAVY_H OPLS-AA branch; H2O.itp does not define HEAVY_H

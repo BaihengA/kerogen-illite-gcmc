@@ -1,0 +1,30 @@
+{
+  "case": "RMS_0p900",
+  "source_wall": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\ILLITE_BELOW_RAW_FINAL_KEROGEN_V31_THICKER_SAFE\\RMS_0p900\\RMS_0p900_EXACT_kerogen_plus_illite.gro",
+  "exact_kerogen": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_ONLY_FINALS\\RAW_KEEP_COORDINATES\\RMS_0p900_kerogen_only_raw_from_final.gro",
+  "source_wall_atoms": 138432,
+  "exact_kerogen_atoms": 92352,
+  "lower_exact_kerogen_max_diff_before_rigid_shift_nm": 0.0,
+  "lower_wall_rigid_shift_nm": [
+    -2.148,
+    -2.169,
+    0.0
+  ],
+  "lower_wall_nonrigid_change_nm": 4.440892098500626e-16,
+  "pore_width_target_nm": 8.0,
+  "pore_width_definition": "mean_surface_plane",
+  "lower_rough_surface_mean_z_nm": 5.514805895264973,
+  "lower_rough_surface_min_z_nm": 2.386,
+  "lower_rough_surface_max_z_nm": 7.695,
+  "mirror_plane_z_nm": 9.514805895264974,
+  "box_nm": [
+    17.044,
+    16.679,
+    19.155611790529946
+  ],
+  "grid_gap_min_nm": 3.6396117905299477,
+  "grid_gap_p05_nm": 4.776411790529949,
+  "grid_gap_mean_nm": 8.000000000000002,
+  "grid_gap_p95_nm": 10.492811790529949,
+  "grid_gap_max_nm": 14.257611790529948
+}
