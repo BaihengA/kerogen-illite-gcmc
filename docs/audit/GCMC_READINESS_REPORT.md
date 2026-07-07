@@ -19,6 +19,9 @@ cif_staging_status: PASS
 smoke_preflight_status: PASS
 startup_behavior: ACTIVE_COMPUTE
 smoke_test_status: FAIL_TIMEOUT
+hotspot_profile_status: SYMBOL_HOTSPOTS_UNAVAILABLE
+framework_scaling_status: INSUFFICIENT_DATA_FOR_COMPLEXITY_FIT
+production_feasibility: NOT_FEASIBLE_AS_IS
 production_ready: NO
 
 ## Thermodynamic State

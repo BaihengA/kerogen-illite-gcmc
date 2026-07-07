@@ -1,0 +1,594 @@
+DIAGNOSTIC_ONLY /proc stack/thread probe
+
+=== sample 0 elapsed_s=0 pid=387 ===
+
+-- /proc/387/task/387/stack --
+cat: /proc/387/task/387/stack: Permission denied
+
+=== sample 1 elapsed_s=5 pid=387 ===
+
+-- /proc/387/task/387/stack --
+cat: /proc/387/task/387/stack: Permission denied
+
+-- /proc/387/task/395/stack --
+cat: /proc/387/task/395/stack: Permission denied
+
+-- /proc/387/task/396/stack --
+cat: /proc/387/task/396/stack: Permission denied
+
+-- /proc/387/task/397/stack --
+cat: /proc/387/task/397/stack: Permission denied
+
+-- /proc/387/task/398/stack --
+cat: /proc/387/task/398/stack: Permission denied
+
+-- /proc/387/task/399/stack --
+cat: /proc/387/task/399/stack: Permission denied
+
+-- /proc/387/task/400/stack --
+cat: /proc/387/task/400/stack: Permission denied
+
+-- /proc/387/task/401/stack --
+cat: /proc/387/task/401/stack: Permission denied
+
+-- /proc/387/task/402/stack --
+cat: /proc/387/task/402/stack: Permission denied
+
+-- /proc/387/task/403/stack --
+cat: /proc/387/task/403/stack: Permission denied
+
+-- /proc/387/task/404/stack --
+cat: /proc/387/task/404/stack: Permission denied
+
+-- /proc/387/task/405/stack --
+cat: /proc/387/task/405/stack: Permission denied
+
+-- /proc/387/task/406/stack --
+cat: /proc/387/task/406/stack: Permission denied
+
+-- /proc/387/task/407/stack --
+cat: /proc/387/task/407/stack: Permission denied
+
+-- /proc/387/task/408/stack --
+cat: /proc/387/task/408/stack: Permission denied
+
+-- /proc/387/task/409/stack --
+cat: /proc/387/task/409/stack: Permission denied
+
+-- /proc/387/task/410/stack --
+cat: /proc/387/task/410/stack: Permission denied
+
+-- /proc/387/task/411/stack --
+cat: /proc/387/task/411/stack: Permission denied
+
+-- /proc/387/task/412/stack --
+cat: /proc/387/task/412/stack: Permission denied
+
+-- /proc/387/task/413/stack --
+cat: /proc/387/task/413/stack: Permission denied
+
+-- /proc/387/task/414/stack --
+cat: /proc/387/task/414/stack: Permission denied
+
+-- /proc/387/task/415/stack --
+cat: /proc/387/task/415/stack: Permission denied
+
+-- /proc/387/task/416/stack --
+cat: /proc/387/task/416/stack: Permission denied
+
+-- /proc/387/task/417/stack --
+cat: /proc/387/task/417/stack: Permission denied
+
+-- /proc/387/task/418/stack --
+cat: /proc/387/task/418/stack: Permission denied
+
+-- /proc/387/task/419/stack --
+cat: /proc/387/task/419/stack: Permission denied
+
+-- /proc/387/task/420/stack --
+cat: /proc/387/task/420/stack: Permission denied
+
+-- /proc/387/task/421/stack --
+cat: /proc/387/task/421/stack: Permission denied
+
+-- /proc/387/task/422/stack --
+cat: /proc/387/task/422/stack: Permission denied
+
+-- /proc/387/task/423/stack --
+cat: /proc/387/task/423/stack: Permission denied
+
+-- /proc/387/task/424/stack --
+cat: /proc/387/task/424/stack: Permission denied
+
+-- /proc/387/task/425/stack --
+cat: /proc/387/task/425/stack: Permission denied
+
+=== sample 2 elapsed_s=10 pid=387 ===
+
+-- /proc/387/task/387/stack --
+cat: /proc/387/task/387/stack: Permission denied
+
+-- /proc/387/task/395/stack --
+cat: /proc/387/task/395/stack: Permission denied
+
+-- /proc/387/task/396/stack --
+cat: /proc/387/task/396/stack: Permission denied
+
+-- /proc/387/task/397/stack --
+cat: /proc/387/task/397/stack: Permission denied
+
+-- /proc/387/task/398/stack --
+cat: /proc/387/task/398/stack: Permission denied
+
+-- /proc/387/task/399/stack --
+cat: /proc/387/task/399/stack: Permission denied
+
+-- /proc/387/task/400/stack --
+cat: /proc/387/task/400/stack: Permission denied
+
+-- /proc/387/task/401/stack --
+cat: /proc/387/task/401/stack: Permission denied
+
+-- /proc/387/task/402/stack --
+cat: /proc/387/task/402/stack: Permission denied
+
+-- /proc/387/task/403/stack --
+cat: /proc/387/task/403/stack: Permission denied
+
+-- /proc/387/task/404/stack --
+cat: /proc/387/task/404/stack: Permission denied
+
+-- /proc/387/task/405/stack --
+cat: /proc/387/task/405/stack: Permission denied
+
+-- /proc/387/task/406/stack --
+cat: /proc/387/task/406/stack: Permission denied
+
+-- /proc/387/task/407/stack --
+cat: /proc/387/task/407/stack: Permission denied
+
+-- /proc/387/task/408/stack --
+cat: /proc/387/task/408/stack: Permission denied
+
+-- /proc/387/task/409/stack --
+cat: /proc/387/task/409/stack: Permission denied
+
+-- /proc/387/task/410/stack --
+cat: /proc/387/task/410/stack: Permission denied
+
+-- /proc/387/task/411/stack --
+cat: /proc/387/task/411/stack: Permission denied
+
+-- /proc/387/task/412/stack --
+cat: /proc/387/task/412/stack: Permission denied
+
+-- /proc/387/task/413/stack --
+cat: /proc/387/task/413/stack: Permission denied
+
+-- /proc/387/task/414/stack --
+cat: /proc/387/task/414/stack: Permission denied
+
+-- /proc/387/task/415/stack --
+cat: /proc/387/task/415/stack: Permission denied
+
+-- /proc/387/task/416/stack --
+cat: /proc/387/task/416/stack: Permission denied
+
+-- /proc/387/task/417/stack --
+cat: /proc/387/task/417/stack: Permission denied
+
+-- /proc/387/task/418/stack --
+cat: /proc/387/task/418/stack: Permission denied
+
+-- /proc/387/task/419/stack --
+cat: /proc/387/task/419/stack: Permission denied
+
+-- /proc/387/task/420/stack --
+cat: /proc/387/task/420/stack: Permission denied
+
+-- /proc/387/task/421/stack --
+cat: /proc/387/task/421/stack: Permission denied
+
+-- /proc/387/task/422/stack --
+cat: /proc/387/task/422/stack: Permission denied
+
+-- /proc/387/task/423/stack --
+cat: /proc/387/task/423/stack: Permission denied
+
+-- /proc/387/task/424/stack --
+cat: /proc/387/task/424/stack: Permission denied
+
+-- /proc/387/task/425/stack --
+cat: /proc/387/task/425/stack: Permission denied
+
+=== sample 3 elapsed_s=16 pid=387 ===
+
+-- /proc/387/task/387/stack --
+cat: /proc/387/task/387/stack: Permission denied
+
+-- /proc/387/task/395/stack --
+cat: /proc/387/task/395/stack: Permission denied
+
+-- /proc/387/task/396/stack --
+cat: /proc/387/task/396/stack: Permission denied
+
+-- /proc/387/task/397/stack --
+cat: /proc/387/task/397/stack: Permission denied
+
+-- /proc/387/task/398/stack --
+cat: /proc/387/task/398/stack: Permission denied
+
+-- /proc/387/task/399/stack --
+cat: /proc/387/task/399/stack: Permission denied
+
+-- /proc/387/task/400/stack --
+cat: /proc/387/task/400/stack: Permission denied
+
+-- /proc/387/task/401/stack --
+cat: /proc/387/task/401/stack: Permission denied
+
+-- /proc/387/task/402/stack --
+cat: /proc/387/task/402/stack: Permission denied
+
+-- /proc/387/task/403/stack --
+cat: /proc/387/task/403/stack: Permission denied
+
+-- /proc/387/task/404/stack --
+cat: /proc/387/task/404/stack: Permission denied
+
+-- /proc/387/task/405/stack --
+cat: /proc/387/task/405/stack: Permission denied
+
+-- /proc/387/task/406/stack --
+cat: /proc/387/task/406/stack: Permission denied
+
+-- /proc/387/task/407/stack --
+cat: /proc/387/task/407/stack: Permission denied
+
+-- /proc/387/task/408/stack --
+cat: /proc/387/task/408/stack: Permission denied
+
+-- /proc/387/task/409/stack --
+cat: /proc/387/task/409/stack: Permission denied
+
+-- /proc/387/task/410/stack --
+cat: /proc/387/task/410/stack: Permission denied
+
+-- /proc/387/task/411/stack --
+cat: /proc/387/task/411/stack: Permission denied
+
+-- /proc/387/task/412/stack --
+cat: /proc/387/task/412/stack: Permission denied
+
+-- /proc/387/task/413/stack --
+cat: /proc/387/task/413/stack: Permission denied
+
+-- /proc/387/task/414/stack --
+cat: /proc/387/task/414/stack: Permission denied
+
+-- /proc/387/task/415/stack --
+cat: /proc/387/task/415/stack: Permission denied
+
+-- /proc/387/task/416/stack --
+cat: /proc/387/task/416/stack: Permission denied
+
+-- /proc/387/task/417/stack --
+cat: /proc/387/task/417/stack: Permission denied
+
+-- /proc/387/task/418/stack --
+cat: /proc/387/task/418/stack: Permission denied
+
+-- /proc/387/task/419/stack --
+cat: /proc/387/task/419/stack: Permission denied
+
+-- /proc/387/task/420/stack --
+cat: /proc/387/task/420/stack: Permission denied
+
+-- /proc/387/task/421/stack --
+cat: /proc/387/task/421/stack: Permission denied
+
+-- /proc/387/task/422/stack --
+cat: /proc/387/task/422/stack: Permission denied
+
+-- /proc/387/task/423/stack --
+cat: /proc/387/task/423/stack: Permission denied
+
+-- /proc/387/task/424/stack --
+cat: /proc/387/task/424/stack: Permission denied
+
+-- /proc/387/task/425/stack --
+cat: /proc/387/task/425/stack: Permission denied
+
+=== sample 4 elapsed_s=22 pid=387 ===
+
+-- /proc/387/task/387/stack --
+cat: /proc/387/task/387/stack: Permission denied
+
+-- /proc/387/task/395/stack --
+cat: /proc/387/task/395/stack: Permission denied
+
+-- /proc/387/task/396/stack --
+cat: /proc/387/task/396/stack: Permission denied
+
+-- /proc/387/task/397/stack --
+cat: /proc/387/task/397/stack: Permission denied
+
+-- /proc/387/task/398/stack --
+cat: /proc/387/task/398/stack: Permission denied
+
+-- /proc/387/task/399/stack --
+cat: /proc/387/task/399/stack: Permission denied
+
+-- /proc/387/task/400/stack --
+cat: /proc/387/task/400/stack: Permission denied
+
+-- /proc/387/task/401/stack --
+cat: /proc/387/task/401/stack: Permission denied
+
+-- /proc/387/task/402/stack --
+cat: /proc/387/task/402/stack: Permission denied
+
+-- /proc/387/task/403/stack --
+cat: /proc/387/task/403/stack: Permission denied
+
+-- /proc/387/task/404/stack --
+cat: /proc/387/task/404/stack: Permission denied
+
+-- /proc/387/task/405/stack --
+cat: /proc/387/task/405/stack: Permission denied
+
+-- /proc/387/task/406/stack --
+cat: /proc/387/task/406/stack: Permission denied
+
+-- /proc/387/task/407/stack --
+cat: /proc/387/task/407/stack: Permission denied
+
+-- /proc/387/task/408/stack --
+cat: /proc/387/task/408/stack: Permission denied
+
+-- /proc/387/task/409/stack --
+cat: /proc/387/task/409/stack: Permission denied
+
+-- /proc/387/task/410/stack --
+cat: /proc/387/task/410/stack: Permission denied
+
+-- /proc/387/task/411/stack --
+cat: /proc/387/task/411/stack: Permission denied
+
+-- /proc/387/task/412/stack --
+cat: /proc/387/task/412/stack: Permission denied
+
+-- /proc/387/task/413/stack --
+cat: /proc/387/task/413/stack: Permission denied
+
+-- /proc/387/task/414/stack --
+cat: /proc/387/task/414/stack: Permission denied
+
+-- /proc/387/task/415/stack --
+cat: /proc/387/task/415/stack: Permission denied
+
+-- /proc/387/task/416/stack --
+cat: /proc/387/task/416/stack: Permission denied
+
+-- /proc/387/task/417/stack --
+cat: /proc/387/task/417/stack: Permission denied
+
+-- /proc/387/task/418/stack --
+cat: /proc/387/task/418/stack: Permission denied
+
+-- /proc/387/task/419/stack --
+cat: /proc/387/task/419/stack: Permission denied
+
+-- /proc/387/task/420/stack --
+cat: /proc/387/task/420/stack: Permission denied
+
+-- /proc/387/task/421/stack --
+cat: /proc/387/task/421/stack: Permission denied
+
+-- /proc/387/task/422/stack --
+cat: /proc/387/task/422/stack: Permission denied
+
+-- /proc/387/task/423/stack --
+cat: /proc/387/task/423/stack: Permission denied
+
+-- /proc/387/task/424/stack --
+cat: /proc/387/task/424/stack: Permission denied
+
+-- /proc/387/task/425/stack --
+cat: /proc/387/task/425/stack: Permission denied
+
+=== sample 5 elapsed_s=28 pid=387 ===
+
+-- /proc/387/task/387/stack --
+cat: /proc/387/task/387/stack: Permission denied
+
+-- /proc/387/task/395/stack --
+cat: /proc/387/task/395/stack: Permission denied
+
+-- /proc/387/task/396/stack --
+cat: /proc/387/task/396/stack: Permission denied
+
+-- /proc/387/task/397/stack --
+cat: /proc/387/task/397/stack: Permission denied
+
+-- /proc/387/task/398/stack --
+cat: /proc/387/task/398/stack: Permission denied
+
+-- /proc/387/task/399/stack --
+cat: /proc/387/task/399/stack: Permission denied
+
+-- /proc/387/task/400/stack --
+cat: /proc/387/task/400/stack: Permission denied
+
+-- /proc/387/task/401/stack --
+cat: /proc/387/task/401/stack: Permission denied
+
+-- /proc/387/task/402/stack --
+cat: /proc/387/task/402/stack: Permission denied
+
+-- /proc/387/task/403/stack --
+cat: /proc/387/task/403/stack: Permission denied
+
+-- /proc/387/task/404/stack --
+cat: /proc/387/task/404/stack: Permission denied
+
+-- /proc/387/task/405/stack --
+cat: /proc/387/task/405/stack: Permission denied
+
+-- /proc/387/task/406/stack --
+cat: /proc/387/task/406/stack: Permission denied
+
+-- /proc/387/task/407/stack --
+cat: /proc/387/task/407/stack: Permission denied
+
+-- /proc/387/task/408/stack --
+cat: /proc/387/task/408/stack: Permission denied
+
+-- /proc/387/task/409/stack --
+cat: /proc/387/task/409/stack: Permission denied
+
+-- /proc/387/task/410/stack --
+cat: /proc/387/task/410/stack: Permission denied
+
+-- /proc/387/task/411/stack --
+cat: /proc/387/task/411/stack: Permission denied
+
+-- /proc/387/task/412/stack --
+cat: /proc/387/task/412/stack: Permission denied
+
+-- /proc/387/task/413/stack --
+cat: /proc/387/task/413/stack: Permission denied
+
+-- /proc/387/task/414/stack --
+cat: /proc/387/task/414/stack: Permission denied
+
+-- /proc/387/task/415/stack --
+cat: /proc/387/task/415/stack: Permission denied
+
+-- /proc/387/task/416/stack --
+cat: /proc/387/task/416/stack: Permission denied
+
+-- /proc/387/task/417/stack --
+cat: /proc/387/task/417/stack: Permission denied
+
+-- /proc/387/task/418/stack --
+cat: /proc/387/task/418/stack: Permission denied
+
+-- /proc/387/task/419/stack --
+cat: /proc/387/task/419/stack: Permission denied
+
+-- /proc/387/task/420/stack --
+cat: /proc/387/task/420/stack: Permission denied
+
+-- /proc/387/task/421/stack --
+cat: /proc/387/task/421/stack: Permission denied
+
+-- /proc/387/task/422/stack --
+cat: /proc/387/task/422/stack: Permission denied
+
+-- /proc/387/task/423/stack --
+cat: /proc/387/task/423/stack: Permission denied
+
+-- /proc/387/task/424/stack --
+cat: /proc/387/task/424/stack: Permission denied
+
+-- /proc/387/task/425/stack --
+cat: /proc/387/task/425/stack: Permission denied
+
+=== sample 6 elapsed_s=33 pid=387 ===
+
+-- /proc/387/task/387/stack --
+cat: /proc/387/task/387/stack: Permission denied
+
+-- /proc/387/task/395/stack --
+cat: /proc/387/task/395/stack: Permission denied
+
+-- /proc/387/task/396/stack --
+cat: /proc/387/task/396/stack: Permission denied
+
+-- /proc/387/task/397/stack --
+cat: /proc/387/task/397/stack: Permission denied
+
+-- /proc/387/task/398/stack --
+cat: /proc/387/task/398/stack: Permission denied
+
+-- /proc/387/task/399/stack --
+cat: /proc/387/task/399/stack: Permission denied
+
+-- /proc/387/task/400/stack --
+cat: /proc/387/task/400/stack: Permission denied
+
+-- /proc/387/task/401/stack --
+cat: /proc/387/task/401/stack: Permission denied
+
+-- /proc/387/task/402/stack --
+cat: /proc/387/task/402/stack: Permission denied
+
+-- /proc/387/task/403/stack --
+cat: /proc/387/task/403/stack: Permission denied
+
+-- /proc/387/task/404/stack --
+cat: /proc/387/task/404/stack: Permission denied
+
+-- /proc/387/task/405/stack --
+cat: /proc/387/task/405/stack: Permission denied
+
+-- /proc/387/task/406/stack --
+cat: /proc/387/task/406/stack: Permission denied
+
+-- /proc/387/task/407/stack --
+cat: /proc/387/task/407/stack: Permission denied
+
+-- /proc/387/task/408/stack --
+cat: /proc/387/task/408/stack: Permission denied
+
+-- /proc/387/task/409/stack --
+cat: /proc/387/task/409/stack: Permission denied
+
+-- /proc/387/task/410/stack --
+cat: /proc/387/task/410/stack: Permission denied
+
+-- /proc/387/task/411/stack --
+cat: /proc/387/task/411/stack: Permission denied
+
+-- /proc/387/task/412/stack --
+cat: /proc/387/task/412/stack: Permission denied
+
+-- /proc/387/task/413/stack --
+cat: /proc/387/task/413/stack: Permission denied
+
+-- /proc/387/task/414/stack --
+cat: /proc/387/task/414/stack: Permission denied
+
+-- /proc/387/task/415/stack --
+cat: /proc/387/task/415/stack: Permission denied
+
+-- /proc/387/task/416/stack --
+cat: /proc/387/task/416/stack: Permission denied
+
+-- /proc/387/task/417/stack --
+cat: /proc/387/task/417/stack: Permission denied
+
+-- /proc/387/task/418/stack --
+cat: /proc/387/task/418/stack: Permission denied
+
+-- /proc/387/task/419/stack --
+cat: /proc/387/task/419/stack: Permission denied
+
+-- /proc/387/task/420/stack --
+cat: /proc/387/task/420/stack: Permission denied
+
+-- /proc/387/task/421/stack --
+cat: /proc/387/task/421/stack: Permission denied
+
+-- /proc/387/task/422/stack --
+cat: /proc/387/task/422/stack: Permission denied
+
+-- /proc/387/task/423/stack --
+cat: /proc/387/task/423/stack: Permission denied
+
+-- /proc/387/task/424/stack --
+cat: /proc/387/task/424/stack: Permission denied
+
+-- /proc/387/task/425/stack --
+cat: /proc/387/task/425/stack: Permission denied

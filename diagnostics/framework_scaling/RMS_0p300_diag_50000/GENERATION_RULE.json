@@ -1,0 +1,101 @@
+{
+  "case": "RMS_0p300_diag_50000",
+  "status": "DIAGNOSTIC_ONLY",
+  "selection_rule": "nearest framework atoms to fractional cell center (0.5,0.5,0.5), sorted by Cartesian squared distance; no random deletion",
+  "target_atom_count": 50000,
+  "actual_atom_count": 50000,
+  "cif": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\diagnostics\\framework_scaling\\RMS_0p300_diag_50000\\RMS_0p300_diag_50000.cif",
+  "sha256": "882c8ef2163fac93d8f9e41a591973b44a7400fdb6984ec9f7f0f6527c280d5e",
+  "size_MB": 3.314263343811035,
+  "bounding_box_A": {
+    "x_min": 19.509999995645998,
+    "x_max": 146.730000007264,
+    "y_min": 20.450000002464,
+    "y_max": 147.270000007548,
+    "z_min": 22.270000006518085,
+    "z_max": 171.08528562875176
+  },
+  "unique_atom_types": 485,
+  "atom_type_distribution_top20": [
+    [
+      "kero_H1DA",
+      120
+    ],
+    [
+      "kero_O1D8",
+      119
+    ],
+    [
+      "kero_C04F",
+      118
+    ],
+    [
+      "kero_O1D9",
+      116
+    ],
+    [
+      "kero_C04E",
+      116
+    ],
+    [
+      "kero_C04D",
+      116
+    ],
+    [
+      "kero_H050",
+      116
+    ],
+    [
+      "kero_H1BF",
+      115
+    ],
+    [
+      "kero_H15F",
+      115
+    ],
+    [
+      "kero_H053",
+      115
+    ],
+    [
+      "kero_H051",
+      115
+    ],
+    [
+      "kero_H055",
+      115
+    ],
+    [
+      "kero_H052",
+      115
+    ],
+    [
+      "kero_C011",
+      114
+    ],
+    [
+      "kero_C04C",
+      114
+    ],
+    [
+      "kero_H054",
+      114
+    ],
+    [
+      "kero_H15E",
+      114
+    ],
+    [
+      "kero_H0D3",
+      113
+    ],
+    [
+      "kero_H01A",
+      113
+    ],
+    [
+      "kero_H0D1",
+      113
+    ]
+  ]
+}

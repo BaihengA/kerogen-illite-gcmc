@@ -19,6 +19,17 @@ workflows/**/generated/**/stdout.txt
 workflows/**/generated/**/stderr.txt
 workflows/**/generated/**/raspa_startup_profile_stdout.txt
 workflows/**/generated/**/raspa_startup_profile_stderr.txt
+diagnostics/framework_scaling/**/*.cif
+diagnostics/framework_scaling/**/force_field*.def
+diagnostics/framework_scaling/**/pseudo_atoms.def
+diagnostics/framework_scaling/**/H2O.def
+diagnostics/framework_scaling/**/simulation.input
+diagnostics/framework_scaling/**/stdout.txt
+diagnostics/framework_scaling/**/stderr.txt
+diagnostics/framework_scaling/**/Output/
+diagnostics/perf/*.data
+diagnostics/perf/*stdout.txt
+diagnostics/perf/*stderr.txt
 Movies/
 __pycache__/
 **/__pycache__/

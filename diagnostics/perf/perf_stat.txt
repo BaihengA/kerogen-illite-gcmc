@@ -1,0 +1,3 @@
+PERF_NOT_AVAILABLE
+perf stat was not run because `perf` is not installed in Ubuntu-22.04.
+Fallback strace -c was run; see strace_summary.txt.

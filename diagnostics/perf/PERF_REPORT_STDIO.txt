@@ -1,0 +1,3 @@
+PERF_NOT_AVAILABLE
+perf record/report was not run because `perf` is not installed in Ubuntu-22.04.
+No symbol-level CPU hotspot table is available from perf.

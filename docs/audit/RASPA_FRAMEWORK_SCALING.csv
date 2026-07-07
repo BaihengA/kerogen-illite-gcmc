@@ -1,0 +1,6 @@
+case,framework_atom_count,CIF_size_MB,time_to_first_component_output_s,time_to_first_cycle_output_s,timeout,CPU_median,RSS_max_MB,exit_code,output_dir_exists,status,last_stderr_line
+RMS_0p300_diag_10000,10000,0.663566,5.202,,NO,,0.000,0,NO,FAIL_INPUT,Error:  Number of atoms per molecule (0) smaller or equal than zero
+RMS_0p300_diag_25000,25000,1.657950,21.067,,NO,,0.000,0,NO,FAIL_INPUT,Error:  Number of atoms per molecule (0) smaller or equal than zero
+RMS_0p300_diag_50000,50000,3.314263,,,NO,,0.000,9,NO,FAIL_POST_CIF_EXIT_9,End reading cif-file
+RMS_0p300_diag_100000,100000,6.620040,,,NO,,0.000,9,NO,FAIL_POST_CIF_EXIT_9,End reading cif-file
+RMS_0p300_full_canonical,276864,18.254027,,,YES,100.000,223.664,,NO,TIMEOUT_FROM_PRIOR_300S_PROFILE,End reading cif-file

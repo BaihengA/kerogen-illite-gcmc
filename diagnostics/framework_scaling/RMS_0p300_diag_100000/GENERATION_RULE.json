@@ -1,0 +1,101 @@
+{
+  "case": "RMS_0p300_diag_100000",
+  "status": "DIAGNOSTIC_ONLY",
+  "selection_rule": "nearest framework atoms to fractional cell center (0.5,0.5,0.5), sorted by Cartesian squared distance; no random deletion",
+  "target_atom_count": 100000,
+  "actual_atom_count": 100000,
+  "cif": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\diagnostics\\framework_scaling\\RMS_0p300_diag_100000\\RMS_0p300_diag_100000.cif",
+  "sha256": "6b95a7c5bc3c8e7cfb9a0ca27760c04ab2f3c37b0aaa1016753d57b47c1d5f8b",
+  "size_MB": 6.620039939880371,
+  "bounding_box_A": {
+    "x_min": 7.140000007157001,
+    "x_max": 161.89999999288602,
+    "y_min": 5.829999996024001,
+    "y_max": 161.61999999904802,
+    "z_min": 8.300000007527839,
+    "z_max": 183.46528561686458
+  },
+  "unique_atom_types": 521,
+  "atom_type_distribution_top20": [
+    [
+      "illi_O20",
+      304
+    ],
+    [
+      "illi_O1A",
+      304
+    ],
+    [
+      "illi_O1B",
+      303
+    ],
+    [
+      "illi_O17",
+      303
+    ],
+    [
+      "illi_O1F",
+      296
+    ],
+    [
+      "illi_O15",
+      294
+    ],
+    [
+      "illi_Si07",
+      278
+    ],
+    [
+      "illi_Si06",
+      276
+    ],
+    [
+      "illi_Si05",
+      275
+    ],
+    [
+      "illi_Si08",
+      268
+    ],
+    [
+      "illi_H27",
+      242
+    ],
+    [
+      "illi_O1D",
+      217
+    ],
+    [
+      "illi_O16",
+      217
+    ],
+    [
+      "illi_O1C",
+      216
+    ],
+    [
+      "illi_O19",
+      216
+    ],
+    [
+      "illi_O18",
+      215
+    ],
+    [
+      "illi_O1E",
+      214
+    ],
+    [
+      "kero_C174",
+      205
+    ],
+    [
+      "kero_C1A8",
+      204
+    ],
+    [
+      "kero_H15A",
+      204
+    ]
+  ]
+}
