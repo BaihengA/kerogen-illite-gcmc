@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-07-07T10:53:56.994472+00:00",
+  "case": "RMS_0p300",
+  "run_directory": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa",
+  "status": "PASS",
+  "source_manifest": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\RUN_ASSET_MANIFEST.json",
+  "source_preflight": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\SMOKE_PREFLIGHT_REPORT.json",
+  "assets": [
+    {
+      "name": "simulation.input",
+      "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\simulation.input",
+      "size_bytes": 843,
+      "sha256": "05e218c06a535573ecaf0fbe5c14b1a5c2e2d62a0c7ce81d78bf9384b067b484"
+    },
+    {
+      "name": "RMS_0p300_Pore8nm.cif",
+      "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\RMS_0p300_Pore8nm.cif",
+      "size_bytes": 19140735,
+      "sha256": "bde8490dd8ea46187a483d032f5d625fcc7cb528edd83e24e6c8cf7aa6f2111d"
+    },
+    {
+      "name": "force_field_mixing_rules.def",
+      "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\force_field_mixing_rules.def",
+      "size_bytes": 22779,
+      "sha256": "3e904fd58dc65d3c0f77b11e4f598c6dd1551f9c025a974c7a981388b1b417f5"
+    },
+    {
+      "name": "pseudo_atoms.def",
+      "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\pseudo_atoms.def",
+      "size_bytes": 29998,
+      "sha256": "97ddfd399c496fafa5991266a1fbc4a289e465b0dfb3538af422278c6dd0ab2c"
+    },
+    {
+      "name": "force_field.def",
+      "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\force_field.def",
+      "size_bytes": 82,
+      "sha256": "d53a22417b2383f86f91ae4789cf7820711b013ebebb70efbe4055382cd5d0aa"
+    },
+    {
+      "name": "H2O.def",
+      "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\H2O.def",
+      "size_bytes": 866,
+      "sha256": "675ed1556f815fea75dd25fdda8d33f8a2be873abbc6ca70d2a81f5dda4accbd"
+    }
+  ],
+  "rule": "Startup profiling must not silently modify these inputs.",
+  "combined_input_set_sha256": "3d62ecd13dce89d31fa11531b6073d9ed0936df334a12e8c6700ae64cdee5f7c"
+}

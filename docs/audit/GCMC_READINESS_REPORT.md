@@ -11,7 +11,14 @@ CH4_reservoir_boundary_status: PASS
 H2O_reservoir_boundary_status: PASS
 thermodynamic_boundary_status: PASS
 fugacity_mapping_status: PASS
-smoke_test_status: FAIL
+run_asset_manifest_status: PASS
+local_forcefield_coverage_status: PASS
+h2o_def_status: PASS
+framework_cif_status: PASS
+cif_staging_status: PASS
+smoke_preflight_status: PASS
+startup_behavior: ACTIVE_COMPUTE
+smoke_test_status: FAIL_TIMEOUT
 production_ready: NO
 
 ## Thermodynamic State
@@ -20,6 +27,11 @@ production_ready: NO
 - f_H2O_Pa: 53255.717968868
 - water_activity: 1.0
 - reservoir_reference: external_real_water_reference
+- H2O RASPA effective mapping coefficient: 1.1266978304747
 - pore_water_model: OPLS 3-site water from 00_INPUT/H2O.pdb and 00_INPUT/H2O.itp
 
-Production remains blocked because the RMS_0p300 smoke test did not reach RASPA execution: the canonical run directory lacks complete Local forcefield assets, H2O.def, and the RMS_0p300 framework CIF copy.
+## Current Blocker
+
+Canonical run assets and smoke preflight now pass. RASPA2 `simulate` starts and reads the RMS_0p300 framework CIF, but the canonical CH4-H2O 1+1 smoke does not complete within the 900 s `EXTENDED_SMOKE_ONLY` probe. The precise current failure class is `FAIL_TIMEOUT`, not missing assets, not reproduced exit 139, and not production output.
+
+Production remains blocked because only a completed canonical CH4-H2O smoke may set `production_ready: YES`.
