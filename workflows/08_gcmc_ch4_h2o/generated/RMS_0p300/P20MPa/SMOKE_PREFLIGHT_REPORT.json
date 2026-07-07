@@ -60,8 +60,8 @@
       "status": "PASS",
       "detail": {
         "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\H2O.def",
-        "expected_sha256": "675ed1556f815fea75dd25fdda8d33f8a2be873abbc6ca70d2a81f5dda4accbd",
-        "actual_sha256": "675ed1556f815fea75dd25fdda8d33f8a2be873abbc6ca70d2a81f5dda4accbd"
+        "expected_sha256": "bf1a5c1964e031f84c88d9974ef09d26ba818aab4e570ab1c37151c204f06bf8",
+        "actual_sha256": "bf1a5c1964e031f84c88d9974ef09d26ba818aab4e570ab1c37151c204f06bf8"
       }
     },
     {

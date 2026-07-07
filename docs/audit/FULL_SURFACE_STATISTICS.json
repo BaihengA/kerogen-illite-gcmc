@@ -1,0 +1,24 @@
+{
+  "status": "PARTIAL_FROM_EXISTING_BUILD_REPORT",
+  "case": "RMS_0p300",
+  "framework_atom_count": 276864,
+  "unique_atom_type_count": 521,
+  "kerogen_atom_count": 184704,
+  "illite_atom_count": 92160,
+  "charge_count": 276864,
+  "nonzero_charge_atom_count": 0,
+  "cell_A": {
+    "a": 170.21,
+    "b": 166.68,
+    "c": 191.47528562
+  },
+  "source_build_report": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\COMPOSITE_PORES_8NM_V33\\RMS_0p300\\RMS_0p300_pore_build_report.json",
+  "pore_width_target_nm": 8.0,
+  "rough_surface_mean_z_nm": 5.503264281230384,
+  "rough_surface_min_z_nm": 2.357,
+  "rough_surface_max_z_nm": 6.329,
+  "grid_gap_min_nm": 6.348528562460766,
+  "grid_gap_mean_nm": 8.0,
+  "grid_gap_max_nm": 14.292528562460765,
+  "note": "Full 2D height map/PSD/autocorrelation require a dedicated surface reconstruction step and were not fabricated in this round."
+}

@@ -61,7 +61,6 @@ def build_h2o_def(path: Path) -> dict:
     origin = pdb[0]
     lines = [
         "# critical constants: Temperature [T], Pressure [Pa], and Acentric factor [-]",
-        "# parser metadata: Tc/Pc from IAPWS95; omega from local thermo package; explicit FugacityCoefficient is used for reservoir fugacity mapping",
         "647.096",
         "22064000.0",
         "0.3443",

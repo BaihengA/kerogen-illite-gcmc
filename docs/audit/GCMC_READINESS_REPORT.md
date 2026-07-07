@@ -22,6 +22,10 @@ smoke_test_status: FAIL_TIMEOUT
 hotspot_profile_status: SYMBOL_HOTSPOTS_UNAVAILABLE
 framework_scaling_status: INSUFFICIENT_DATA_FOR_COMPLEXITY_FIT
 production_feasibility: NOT_FEASIBLE_AS_IS
+molecule_definition_gate: PASS
+grid_capability_status: SUPPORTED_BUT_FULL_NOT_FEASIBLE_DIRECT
+representative_patch_status: NOT_READY
+framework_representation_recommendation: GRID_DIAGNOSTIC_FIRST_NOT_PRODUCTION
 production_ready: NO
 
 ## Thermodynamic State

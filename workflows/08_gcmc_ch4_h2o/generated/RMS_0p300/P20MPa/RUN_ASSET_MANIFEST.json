@@ -37,7 +37,7 @@
     "source_pdb_sha256": "e68ba32e1274535c7c986ae7933d72ed3369078846693c08499dbf6bcd090a48",
     "source_itp_sha256": "061971ee8931da54351645a39a65de0381a0fa894d153fc4d3261ad81ae11ce1",
     "staged_path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\H2O.def",
-    "sha256": "675ed1556f815fea75dd25fdda8d33f8a2be873abbc6ca70d2a81f5dda4accbd",
+    "sha256": "bf1a5c1964e031f84c88d9974ef09d26ba818aab4e570ab1c37151c204f06bf8",
     "atom_count": 3,
     "atom_order": [
       "OW",
