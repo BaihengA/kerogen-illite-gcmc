@@ -4,6 +4,7 @@ import json
 from pathlib import Path
 
 from thermodynamics import resolve_state, write_state
+from run_materializer import materialize
 from workflow_common import CODEBASE, PROJECT_ROOT
 
 CONFIG = PROJECT_ROOT / "8nm_pore_raspa2_config.json"
@@ -15,9 +16,9 @@ def simulation_input(state) -> str:
     pressure_pa = float(state.pressure_MPa) * 1.0e6
     return "\n".join([
         "SimulationType MonteCarlo",
-        "NumberOfCycles 10",
-        "NumberOfInitializationCycles 10",
-        "PrintEvery 10",
+        "NumberOfCycles 1",
+        "NumberOfInitializationCycles 1",
+        "PrintEvery 1",
         "",
         "Forcefield Local",
         "RemoveAtomNumberCodeFromLabel yes",
@@ -25,6 +26,7 @@ def simulation_input(state) -> str:
         "ChargeMethod Ewald",
         "CutOff 12.0",
         "",
+        "Framework 0",
         "FrameworkName RMS_0p300_Pore8nm",
         "UnitCells 1 1 1",
         "",
@@ -64,6 +66,10 @@ def main() -> int:
     write_state(STATE_PATH, state)
     (GENERATED / "simulation.input").write_text(simulation_input(state), encoding="utf-8")
     (GENERATED / "RESERVOIR_STATE.json").write_text(json.dumps(state.__dict__, indent=2), encoding="utf-8")
+    manifest = materialize(run_type="smoke")
+    if manifest["status"] != "PASS":
+        print("Run asset materialization failed; see RUN_ASSET_MANIFEST.json")
+        return 3
     print(f"Generated audited simulation.input: {GENERATED / 'simulation.input'}")
     return 0
 

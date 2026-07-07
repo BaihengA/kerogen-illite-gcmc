@@ -13,6 +13,12 @@ GCMC_OUTPUT*/
 generated/*/Output/
 results/
 workflows/**/generated/**/RESERVOIR_STATE.json
+workflows/**/generated/**/*.cif
+workflows/**/generated/**/Output/
+workflows/**/generated/**/stdout.txt
+workflows/**/generated/**/stderr.txt
+workflows/**/generated/**/raspa_startup_profile_stdout.txt
+workflows/**/generated/**/raspa_startup_profile_stderr.txt
 Movies/
 __pycache__/
 **/__pycache__/

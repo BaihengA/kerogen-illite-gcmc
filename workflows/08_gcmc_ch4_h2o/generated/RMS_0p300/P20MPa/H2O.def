@@ -1,0 +1,24 @@
+# critical constants: Temperature [T], Pressure [Pa], and Acentric factor [-]
+# parser metadata: Tc/Pc from IAPWS95; omega from local thermo package; explicit FugacityCoefficient is used for reservoir fugacity mapping
+647.096
+22064000.0
+0.3443
+#Number Of Atoms
+3
+# Number of groups
+1
+# H2O-group
+rigid
+# number of atoms
+3
+# atomic positions
+0 H2O_OW 0 0 0
+1 H2O_HW1 0 -0.784 0.554
+2 H2O_HW2 -0 0.784 0.554
+# Chiral centers Bond  BondDipoles Bend  UrayBradley InvBend  Torsion Imp. Torsion Bond/Bond Stretch/Bend Bend/Bend Stretch/Torsion Bend/Torsion IntraVDW IntraCoulomb
+               0    2            0    0            0       0        0            0         0            0         0               0            0        0            0
+# Bond stretch: atom n1-n2, type, parameters
+0 1 RIGID_BOND
+0 2 RIGID_BOND
+# Number of config moves
+0

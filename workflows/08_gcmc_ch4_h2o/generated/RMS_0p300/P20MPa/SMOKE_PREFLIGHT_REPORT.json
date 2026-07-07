@@ -1,0 +1,123 @@
+{
+  "case": "RMS_0p300",
+  "run_directory": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa",
+  "launch_allowed": "YES",
+  "checks": [
+    {
+      "name": "RUN_ASSET_MANIFEST",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\RUN_ASSET_MANIFEST.json"
+      }
+    },
+    {
+      "name": "simulation.input",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\simulation.input",
+        "expected_sha256": "05e218c06a535573ecaf0fbe5c14b1a5c2e2d62a0c7ce81d78bf9384b067b484",
+        "actual_sha256": "05e218c06a535573ecaf0fbe5c14b1a5c2e2d62a0c7ce81d78bf9384b067b484"
+      }
+    },
+    {
+      "name": "framework CIF",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\RMS_0p300_Pore8nm.cif",
+        "expected_sha256": "bde8490dd8ea46187a483d032f5d625fcc7cb528edd83e24e6c8cf7aa6f2111d",
+        "actual_sha256": "bde8490dd8ea46187a483d032f5d625fcc7cb528edd83e24e6c8cf7aa6f2111d"
+      }
+    },
+    {
+      "name": "force_field_mixing_rules.def",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\force_field_mixing_rules.def",
+        "expected_sha256": "3e904fd58dc65d3c0f77b11e4f598c6dd1551f9c025a974c7a981388b1b417f5",
+        "actual_sha256": "3e904fd58dc65d3c0f77b11e4f598c6dd1551f9c025a974c7a981388b1b417f5"
+      }
+    },
+    {
+      "name": "pseudo_atoms.def",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\pseudo_atoms.def",
+        "expected_sha256": "97ddfd399c496fafa5991266a1fbc4a289e465b0dfb3538af422278c6dd0ab2c",
+        "actual_sha256": "97ddfd399c496fafa5991266a1fbc4a289e465b0dfb3538af422278c6dd0ab2c"
+      }
+    },
+    {
+      "name": "force_field.def",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\force_field.def",
+        "expected_sha256": "d53a22417b2383f86f91ae4789cf7820711b013ebebb70efbe4055382cd5d0aa",
+        "actual_sha256": "d53a22417b2383f86f91ae4789cf7820711b013ebebb70efbe4055382cd5d0aa"
+      }
+    },
+    {
+      "name": "H2O.def",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa\\H2O.def",
+        "expected_sha256": "675ed1556f815fea75dd25fdda8d33f8a2be873abbc6ca70d2a81f5dda4accbd",
+        "actual_sha256": "675ed1556f815fea75dd25fdda8d33f8a2be873abbc6ca70d2a81f5dda4accbd"
+      }
+    },
+    {
+      "name": "methane.def resolvable",
+      "status": "PASS",
+      "detail": {
+        "mode": "ExampleDefinitions",
+        "resolved_path": "/home/baiheng/miniforge3/envs/raspa2/share/raspa/molecules/ExampleDefinitions/methane.def",
+        "sha256": "5281d172d5c98f8f75e04976a8c13cc3ea6125c56e240ba72e06043e52b1541e"
+      }
+    },
+    {
+      "name": "thermodynamic state PASS",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "fugacity roundtrip PASS",
+      "status": "PASS",
+      "detail": {}
+    },
+    {
+      "name": "all atom types covered",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\docs\\audit\\LOCAL_FORCEFIELD_COVERAGE.csv"
+      }
+    },
+    {
+      "name": "run directory writable",
+      "status": "PASS",
+      "detail": {
+        "path": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\workflows\\08_gcmc_ch4_h2o\\generated\\RMS_0p300\\P20MPa"
+      }
+    },
+    {
+      "name": "WSL and simulate executable",
+      "status": "PASS",
+      "detail": {
+        "status": "PASS",
+        "stdout": "OK",
+        "stderr": "w\u0000s\u0000l\u0000:\u0000 \u0000\ufffdhKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000\ufffdN\u0006tM\ufffdn\u007f\f\ufffdFO*g\\\ufffd\ufffdP0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN\ufffdv \u0000W\u0000S\u0000L\u0000 \u0000\rN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000\ufffdN\u0006t\u00020\r\u0000\n\u0000",
+        "exit_code": 0
+      }
+    },
+    {
+      "name": "RASPA framework staged",
+      "status": "PASS",
+      "detail": {
+        "resolved_path": "/home/baiheng/miniforge3/envs/raspa2/share/raspa/structures/cif/RMS_0p300_Pore8nm.cif",
+        "expected_sha256": "bde8490dd8ea46187a483d032f5d625fcc7cb528edd83e24e6c8cf7aa6f2111d",
+        "stdout": "bde8490dd8ea46187a483d032f5d625fcc7cb528edd83e24e6c8cf7aa6f2111d",
+        "stderr": "w\u0000s\u0000l\u0000:\u0000 \u0000\ufffdhKm0R \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000\ufffdN\u0006tM\ufffdn\u007f\f\ufffdFO*g\\\ufffd\ufffdP0R \u0000W\u0000S\u0000L\u0000\u00020N\u0000A\u0000T\u0000 \u0000!j\u000f_\u000bN\ufffdv \u0000W\u0000S\u0000L\u0000 \u0000\rN/e\u0001c \u0000l\u0000o\u0000c\u0000a\u0000l\u0000h\u0000o\u0000s\u0000t\u0000 \u0000\ufffdN\u0006t\u00020\r\u0000\n\u0000",
+        "exit_code": 0,
+        "status": "PASS"
+      }
+    }
+  ]
+}
