@@ -1,0 +1,5 @@
+case,a,b,c,alpha,beta,gamma,det_H,cell_volume,inverse_status,status,notes
+10k,170.21,166.68,191.47528562,90.0,90.0,90.0,5432269.27434,5432269.27434,PASS,PASS,orthorhombic non-singular cell; diagnostic cropping preserved full cell vectors
+25k,170.21,166.68,191.47528562,90.0,90.0,90.0,5432269.27434,5432269.27434,PASS,PASS,orthorhombic non-singular cell; diagnostic cropping preserved full cell vectors
+binary_10k_carrier,170.21,166.68,191.47528562,90.0,90.0,90.0,5432269.27434,5432269.27434,PASS,PASS,orthorhombic non-singular cell; diagnostic cropping preserved full cell vectors
+full,170.21,166.68,191.47528562,90.0,90.0,90.0,5432269.27434,5432269.27434,PASS,PASS,orthorhombic non-singular cell; diagnostic cropping preserved full cell vectors

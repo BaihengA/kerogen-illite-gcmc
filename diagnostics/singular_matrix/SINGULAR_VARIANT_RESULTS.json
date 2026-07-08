@@ -1,0 +1,42 @@
+[
+  {
+    "case": "BINARY_NO_EWALD_LINE",
+    "exit_code": 0,
+    "last_line": "Matrix Inversion, Gauss-Jordan: Singular Matrix",
+    "singular": true,
+    "stderr": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\diagnostics\\singular_matrix\\BINARY_NO_EWALD_LINE\\stderr.txt",
+    "notes": "removed ChargeMethod Ewald"
+  },
+  {
+    "case": "BINARY_CHARGE_NONE",
+    "exit_code": 0,
+    "last_line": "Matrix Inversion, Gauss-Jordan: Singular Matrix",
+    "singular": true,
+    "stderr": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\diagnostics\\singular_matrix\\BINARY_CHARGE_NONE\\stderr.txt",
+    "notes": "ChargeMethod Ewald->ChargeMethod None"
+  },
+  {
+    "case": "BINARY_CREATE_ONE_EACH",
+    "exit_code": 0,
+    "last_line": "Matrix Inversion, Gauss-Jordan: Singular Matrix",
+    "singular": true,
+    "stderr": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\diagnostics\\singular_matrix\\BINARY_CREATE_ONE_EACH\\stderr.txt",
+    "notes": "CreateNumberOfMolecules 0->CreateNumberOfMolecules 1"
+  },
+  {
+    "case": "BINARY_NO_ROTATION",
+    "exit_code": 0,
+    "last_line": "Matrix Inversion, Gauss-Jordan: Singular Matrix",
+    "singular": true,
+    "stderr": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\diagnostics\\singular_matrix\\BINARY_NO_ROTATION\\stderr.txt",
+    "notes": "removed RotationProbability"
+  },
+  {
+    "case": "BINARY_UNIT_FUGACITY",
+    "exit_code": 0,
+    "last_line": "Matrix Inversion, Gauss-Jordan: Singular Matrix",
+    "singular": true,
+    "stderr": "F:\\MD\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\kerogen_bulk0p1_to0p8_then_graphene_pull_v1\\KEROGEN_MD_GCMC_CODEBASE\\diagnostics\\singular_matrix\\BINARY_UNIT_FUGACITY\\stderr.txt",
+    "notes": "FugacityCoefficient 0.8439459552->FugacityCoefficient 1.0; FugacityCoefficient 1.1266978304747->FugacityCoefficient 1.0"
+  }
+]

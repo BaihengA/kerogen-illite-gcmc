@@ -40,6 +40,16 @@ diagnostics/molecule_definition/**/stderr*.txt
 diagnostics/molecule_definition/**/Output/
 diagnostics/molecule_definition/**/Restart/
 diagnostics/molecule_definition/**/VTK/
+diagnostics/singular_matrix/**/*.cif
+diagnostics/singular_matrix/**/force_field*.def
+diagnostics/singular_matrix/**/pseudo_atoms.def
+diagnostics/singular_matrix/**/H2O.def
+diagnostics/singular_matrix/**/simulation.input
+diagnostics/singular_matrix/**/stdout*.txt
+diagnostics/singular_matrix/**/stderr*.txt
+diagnostics/singular_matrix/**/Restart/
+diagnostics/singular_matrix/**/VTK/
+diagnostics/grid_validation/**/Output/
 diagnostics/perf/*.data
 diagnostics/perf/*stdout.txt
 diagnostics/perf/*stderr.txt

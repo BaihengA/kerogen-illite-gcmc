@@ -1,0 +1,2 @@
+point_id,x,y,z,region,explicit_energy,grid_energy,absolute_error,relative_error,status
+NOT_RUN,,,,,,,,FAIL_PRECONDITION,DIAGNOSTIC_CARRIER_GATE failed; grid validation not run

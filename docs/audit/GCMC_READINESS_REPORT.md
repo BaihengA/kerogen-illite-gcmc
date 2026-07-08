@@ -26,6 +26,10 @@ molecule_definition_gate: PASS
 grid_capability_status: SUPPORTED_BUT_FULL_NOT_FEASIBLE_DIRECT
 representative_patch_status: NOT_READY
 framework_representation_recommendation: GRID_DIAGNOSTIC_FIRST_NOT_PRODUCTION
+diagnostic_carrier_gate: FAIL
+grid_gate: FAIL
+grid_validation_status: NOT_RUN_PRECONDITION_FAILED
+patch_route: NOT_PROVEN
 production_ready: NO
 
 ## Thermodynamic State
@@ -41,4 +45,4 @@ production_ready: NO
 
 Canonical run assets and smoke preflight now pass. RASPA2 `simulate` starts and reads the RMS_0p300 framework CIF, but the canonical CH4-H2O 1+1 smoke does not complete within the 900 s `EXTENDED_SMOKE_ONLY` probe. The precise current failure class is `FAIL_TIMEOUT`, not missing assets, not reproduced exit 139, and not production output.
 
-Production remains blocked because only a completed canonical CH4-H2O smoke may set `production_ready: YES`.
+Production remains blocked because only a completed canonical CH4-H2O smoke may set `production_ready: NO

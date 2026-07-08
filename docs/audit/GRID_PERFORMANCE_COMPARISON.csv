@@ -1,0 +1,2 @@
+case,explicit_startup_time,grid_generation_time,grid_startup_time,time_to_component_initialization,RSS_max,CPU_median,status,notes
+NOT_RUN,,,,,,,,FAIL_PRECONDITION,DIAGNOSTIC_CARRIER_GATE failed; grid validation not run

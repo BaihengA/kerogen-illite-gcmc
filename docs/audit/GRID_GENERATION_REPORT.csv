@@ -1,0 +1,2 @@
+case,grid_generation_time_s,grid_dimensions,grid_spacing,grid_file_size,memory,atom_types_covered,component_site_coverage,status,notes
+NOT_RUN,,,,,,,,FAIL_PRECONDITION,DIAGNOSTIC_CARRIER_GATE failed; grid validation not run
