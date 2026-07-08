@@ -1,4 +1,4 @@
-# GCMC Readiness Report
+﻿# GCMC Readiness Report
 
 geometry_status: PASS
 raspa2_status: PASS
@@ -45,4 +45,5 @@ production_ready: NO
 
 Canonical run assets and smoke preflight now pass. RASPA2 `simulate` starts and reads the RMS_0p300 framework CIF, but the canonical CH4-H2O 1+1 smoke does not complete within the 900 s `EXTENDED_SMOKE_ONLY` probe. The precise current failure class is `FAIL_TIMEOUT`, not missing assets, not reproduced exit 139, and not production output.
 
-Production remains blocked because only a completed canonical CH4-H2O smoke may set `production_ready: NO
+Production remains blocked because only a completed canonical CH4-H2O smoke may set `production_ready: YES`.
+
