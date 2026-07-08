@@ -1,0 +1,102 @@
+{
+  "status": "FROZEN",
+  "h2o_def_postfix_serialization_confirmed": true,
+  "h2o_def_used": "diagnostics/molecule_definition/CH4_H2O_BINARY_PARSE_TEST/H2O.def",
+  "grid_spacing_A_predefined": 10.0,
+  "absolute_tolerance_K_predefined": 5.0,
+  "relative_tolerance_predefined": 0.05,
+  "near_wall_distance_A_predefined": 2.0,
+  "high_energy_K_predefined": 100000.0,
+  "files": [
+    {
+      "case": "10k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_10000/force_field_mixing_rules.def",
+      "sha256": "3e904fd58dc65d3c0f77b11e4f598c6dd1551f9c025a974c7a981388b1b417f5",
+      "bytes": 22779
+    },
+    {
+      "case": "10k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_10000/pseudo_atoms.def",
+      "sha256": "97ddfd399c496fafa5991266a1fbc4a289e465b0dfb3538af422278c6dd0ab2c",
+      "bytes": 29998
+    },
+    {
+      "case": "10k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_10000/force_field.def",
+      "sha256": "d53a22417b2383f86f91ae4789cf7820711b013ebebb70efbe4055382cd5d0aa",
+      "bytes": 82
+    },
+    {
+      "case": "10k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_10000/simulation.input",
+      "sha256": "37be0bda579cd6c2fae2ebc222aa56a9cdb0aa3570acd7defd33e6f7d16a84cd",
+      "bytes": 904
+    },
+    {
+      "case": "10k",
+      "path": "diagnostics/molecule_definition/CH4_H2O_BINARY_PARSE_TEST/H2O.def",
+      "role": "H2O.def canonical post-fix serialization used for isolated grid validation run",
+      "sha256": "bf1a5c1964e031f84c88d9974ef09d26ba818aab4e570ab1c37151c204f06bf8",
+      "bytes": 725
+    },
+    {
+      "case": "10k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_10000/H2O.def",
+      "role": "legacy scaling H2O.def not used because it contains parser-metadata comment after critical-constants header",
+      "sha256": "675ed1556f815fea75dd25fdda8d33f8a2be873abbc6ca70d2a81f5dda4accbd",
+      "bytes": 866
+    },
+    {
+      "case": "10k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_10000/RMS_0p300_diag_10000.cif",
+      "sha256": "67a7e131e9357d0277f769f917daefabf626dc164008269d2136cbf3191c9eeb",
+      "bytes": 695799,
+      "framework_atoms": 10000
+    },
+    {
+      "case": "25k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_25000/force_field_mixing_rules.def",
+      "sha256": "3e904fd58dc65d3c0f77b11e4f598c6dd1551f9c025a974c7a981388b1b417f5",
+      "bytes": 22779
+    },
+    {
+      "case": "25k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_25000/pseudo_atoms.def",
+      "sha256": "97ddfd399c496fafa5991266a1fbc4a289e465b0dfb3538af422278c6dd0ab2c",
+      "bytes": 29998
+    },
+    {
+      "case": "25k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_25000/force_field.def",
+      "sha256": "d53a22417b2383f86f91ae4789cf7820711b013ebebb70efbe4055382cd5d0aa",
+      "bytes": 82
+    },
+    {
+      "case": "25k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_25000/simulation.input",
+      "sha256": "358f00de1d83c24d817ec8385d18358edebdaa6ff4f98cdcada14e2f651de173",
+      "bytes": 904
+    },
+    {
+      "case": "25k",
+      "path": "diagnostics/molecule_definition/CH4_H2O_BINARY_PARSE_TEST/H2O.def",
+      "role": "H2O.def canonical post-fix serialization used for isolated grid validation run",
+      "sha256": "bf1a5c1964e031f84c88d9974ef09d26ba818aab4e570ab1c37151c204f06bf8",
+      "bytes": 725
+    },
+    {
+      "case": "25k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_25000/H2O.def",
+      "role": "legacy scaling H2O.def not used because it contains parser-metadata comment after critical-constants header",
+      "sha256": "675ed1556f815fea75dd25fdda8d33f8a2be873abbc6ca70d2a81f5dda4accbd",
+      "bytes": 866
+    },
+    {
+      "case": "25k",
+      "path": "diagnostics/framework_scaling/RMS_0p300_diag_25000/RMS_0p300_diag_25000.cif",
+      "sha256": "a0a87b9be24881a8cdb99c790d0875e0020d09b3a4f7089a101a921df2708052",
+      "bytes": 1738487,
+      "framework_atoms": 25000
+    }
+  ]
+}

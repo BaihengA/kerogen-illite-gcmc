@@ -1,2 +1,49 @@
-point_id,orientation,explicit_total_energy,grid_total_energy,absolute_error,relative_error,status,notes
-NOT_RUN,,,,,,,,FAIL_PRECONDITION,DIAGNOSTIC_CARRIER_GATE failed; grid validation not run
+case,point_id,orientation,explicit_total_energy_K,grid_total_energy_K,absolute_error_K,relative_error,status,notes
+10k,pore_center,as_serialized,0.0,0.0,0.0,0.0,PASS,
+10k,pore_center,flip_y,0.0,0.0,0.0,0.0,PASS,
+10k,pore_center,flip_z,0.0,0.0,0.0,0.0,PASS,
+10k,pore_center,swap_axes,0.0,0.0,0.0,0.0,PASS,
+10k,near_kerogen,as_serialized,0.0,0.0,0.0,0.0,PASS,
+10k,near_kerogen,flip_y,0.0,0.0,0.0,0.0,PASS,
+10k,near_kerogen,flip_z,0.0,0.0,0.0,0.0,PASS,
+10k,near_kerogen,swap_axes,0.0,0.0,0.0,0.0,PASS,
+10k,near_illite,as_serialized,0.0,0.0,0.0,0.0,PASS,
+10k,near_illite,flip_y,0.0,0.0,0.0,0.0,PASS,
+10k,near_illite,flip_z,0.0,0.0,0.0,0.0,PASS,
+10k,near_illite,swap_axes,0.0,0.0,0.0,0.0,PASS,
+10k,roughness_peak,as_serialized,-151.46111588201367,-100459.00888650381,100307.5477706218,662.2660026403089,FAIL,
+10k,roughness_peak,flip_y,-151.46111588201367,-100459.00888650384,100307.54777062182,662.266002640309,FAIL,
+10k,roughness_peak,flip_z,-151.46111588201367,100459.0088865037,100610.47000238571,664.2660026403082,FAIL,
+10k,roughness_peak,swap_axes,-151.46111588201367,-100459.00888650381,100307.5477706218,662.2660026403089,FAIL,
+10k,roughness_valley,as_serialized,1956800761651.148,44080.07910501069,1956800717571.0688,0.9999999774733943,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+10k,roughness_valley,flip_y,1956800761651.148,44080.079105010685,1956800717571.0688,0.9999999774733943,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+10k,roughness_valley,flip_z,1956800761651.148,-44080.07910501069,1956800805731.227,1.0000000225266057,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+10k,roughness_valley,swap_axes,1956800761651.148,44080.07910501036,1956800717571.0688,0.9999999774733943,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+10k,kerogen_illite_interface,as_serialized,0.0,0.0,0.0,0.0,PASS,
+10k,kerogen_illite_interface,flip_y,0.0,0.0,0.0,0.0,PASS,
+10k,kerogen_illite_interface,flip_z,0.0,0.0,0.0,0.0,PASS,
+10k,kerogen_illite_interface,swap_axes,0.0,0.0,0.0,0.0,PASS,
+25k,pore_center,as_serialized,0.0,0.0,0.0,0.0,PASS,
+25k,pore_center,flip_y,0.0,0.0,0.0,0.0,PASS,
+25k,pore_center,flip_z,0.0,0.0,0.0,0.0,PASS,
+25k,pore_center,swap_axes,0.0,0.0,0.0,0.0,PASS,
+25k,near_kerogen,as_serialized,0.0,0.0,0.0,0.0,PASS,
+25k,near_kerogen,flip_y,0.0,0.0,0.0,0.0,PASS,
+25k,near_kerogen,flip_z,0.0,0.0,0.0,0.0,PASS,
+25k,near_kerogen,swap_axes,0.0,0.0,0.0,0.0,PASS,
+25k,near_illite,as_serialized,0.0,0.0,0.0,0.0,PASS,
+25k,near_illite,flip_y,0.0,0.0,0.0,0.0,PASS,
+25k,near_illite,flip_z,0.0,0.0,0.0,0.0,PASS,
+25k,near_illite,swap_axes,0.0,0.0,0.0,0.0,PASS,
+25k,roughness_peak,as_serialized,-159.62017361987785,-112870.46658468881,112710.84641106894,706.1190566017077,FAIL,
+25k,roughness_peak,flip_y,-159.62017361987785,-112870.46658468887,112710.846411069,706.119056601708,FAIL,
+25k,roughness_peak,flip_z,-159.62017361987785,112870.46658467909,113030.08675829896,708.1190566016468,FAIL,
+25k,roughness_peak,swap_axes,-159.62017361987785,-112870.46658468797,112710.8464110681,706.1190566017025,FAIL,
+25k,roughness_valley,as_serialized,161740341154.20026,-231098.42892505438,161740572252.62918,1.0000014288236767,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+25k,roughness_valley,flip_y,161740341154.20026,-231098.42892505438,161740572252.62918,1.0000014288236767,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+25k,roughness_valley,flip_z,161740341154.20026,231098.42892505485,161740110055.77133,0.9999985711763233,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+25k,roughness_valley,swap_axes,161740341154.20026,-231098.42892505438,161740572252.62918,1.0000014288236767,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+25k,kerogen_illite_interface,as_serialized,0.0,0.0,0.0,0.0,PASS,
+25k,kerogen_illite_interface,flip_y,0.0,0.0,0.0,0.0,PASS,
+25k,kerogen_illite_interface,flip_z,0.0,0.0,0.0,0.0,PASS,
+25k,kerogen_illite_interface,swap_axes,0.0,0.0,0.0,0.0,PASS,

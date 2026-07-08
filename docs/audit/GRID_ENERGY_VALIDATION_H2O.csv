@@ -1,2 +1,109 @@
-point_id,site,term,explicit_energy,grid_energy,absolute_error,relative_error,status,notes
-NOT_RUN,,,,,,,,FAIL_PRECONDITION,DIAGNOSTIC_CARRIER_GATE failed; grid validation not run
+case,point_id,site,site_type,term,explicit_energy_K,grid_energy_K,absolute_error_K,relative_error,status,notes
+10k,pore_center,OW,H2O_OW,VDW,0.0,0.0,0.0,,PASS,
+10k,pore_center,OW,H2O_OW,Coulomb,0.0,-0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,pore_center,OW,H2O_OW,Total,0.0,0.0,0.0,0.0,PASS,
+10k,pore_center,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,PASS,
+10k,pore_center,HW1,H2O_HW1,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,pore_center,HW1,H2O_HW1,Total,0.0,0.0,0.0,0.0,PASS,
+10k,pore_center,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,PASS,
+10k,pore_center,HW2,H2O_HW2,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,pore_center,HW2,H2O_HW2,Total,0.0,0.0,0.0,0.0,PASS,
+10k,near_kerogen,OW,H2O_OW,VDW,0.0,0.0,0.0,,PASS,
+10k,near_kerogen,OW,H2O_OW,Coulomb,0.0,-0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,near_kerogen,OW,H2O_OW,Total,0.0,0.0,0.0,0.0,PASS,
+10k,near_kerogen,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,PASS,
+10k,near_kerogen,HW1,H2O_HW1,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,near_kerogen,HW1,H2O_HW1,Total,0.0,0.0,0.0,0.0,PASS,
+10k,near_kerogen,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,PASS,
+10k,near_kerogen,HW2,H2O_HW2,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,near_kerogen,HW2,H2O_HW2,Total,0.0,0.0,0.0,0.0,PASS,
+10k,near_illite,OW,H2O_OW,VDW,0.0,0.0,0.0,,PASS,
+10k,near_illite,OW,H2O_OW,Coulomb,0.0,-0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,near_illite,OW,H2O_OW,Total,0.0,0.0,0.0,0.0,PASS,
+10k,near_illite,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,PASS,
+10k,near_illite,HW1,H2O_HW1,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,near_illite,HW1,H2O_HW1,Total,0.0,0.0,0.0,0.0,PASS,
+10k,near_illite,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,PASS,
+10k,near_illite,HW2,H2O_HW2,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,near_illite,HW2,H2O_HW2,Total,0.0,0.0,0.0,0.0,PASS,
+10k,roughness_peak,OW,H2O_OW,VDW,-151.46111588201367,0.0,151.46111588201367,,FAIL,
+10k,roughness_peak,OW,H2O_OW,Coulomb,0.0,-741122.7673899443,741122.7673899443,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,roughness_peak,OW,H2O_OW,Total,-151.46111588201367,-741122.7673899443,740971.3062740623,4892.1553361013775,FAIL,
+10k,roughness_peak,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,FAIL,
+10k,roughness_peak,HW1,H2O_HW1,Coulomb,0.0,186913.6517319148,186913.6517319148,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,roughness_peak,HW1,H2O_HW1,Total,0.0,186913.6517319148,186913.6517319148,186913.6517319148,FAIL,
+10k,roughness_peak,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,FAIL,
+10k,roughness_peak,HW2,H2O_HW2,Coulomb,0.0,453750.10677152564,453750.10677152564,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,roughness_peak,HW2,H2O_HW2,Total,0.0,453750.10677152564,453750.10677152564,453750.10677152564,FAIL,
+10k,roughness_valley,OW,H2O_OW,VDW,1956800761651.148,0.0,1956800761651.148,,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+10k,roughness_valley,OW,H2O_OW,Coulomb,0.0,-165452.55153480376,165452.55153480376,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,roughness_valley,OW,H2O_OW,Total,1956800761651.148,-165452.55153480376,1956800927103.6995,1.0000000845525792,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+10k,roughness_valley,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,FAIL,
+10k,roughness_valley,HW1,H2O_HW1,Coulomb,0.0,8401.549085771047,8401.549085771047,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,roughness_valley,HW1,H2O_HW1,Total,0.0,8401.549085771047,8401.549085771047,8401.549085771047,FAIL,
+10k,roughness_valley,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,FAIL,
+10k,roughness_valley,HW2,H2O_HW2,Coulomb,0.0,201131.0815540434,201131.0815540434,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,roughness_valley,HW2,H2O_HW2,Total,0.0,201131.0815540434,201131.0815540434,201131.0815540434,FAIL,
+10k,kerogen_illite_interface,OW,H2O_OW,VDW,0.0,0.0,0.0,,PASS,
+10k,kerogen_illite_interface,OW,H2O_OW,Coulomb,0.0,-0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,kerogen_illite_interface,OW,H2O_OW,Total,0.0,0.0,0.0,0.0,PASS,
+10k,kerogen_illite_interface,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,PASS,
+10k,kerogen_illite_interface,HW1,H2O_HW1,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,kerogen_illite_interface,HW1,H2O_HW1,Total,0.0,0.0,0.0,0.0,PASS,
+10k,kerogen_illite_interface,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,PASS,
+10k,kerogen_illite_interface,HW2,H2O_HW2,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+10k,kerogen_illite_interface,HW2,H2O_HW2,Total,0.0,0.0,0.0,0.0,PASS,
+25k,pore_center,OW,H2O_OW,VDW,0.0,0.0,0.0,,PASS,
+25k,pore_center,OW,H2O_OW,Coulomb,0.0,-0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,pore_center,OW,H2O_OW,Total,0.0,0.0,0.0,0.0,PASS,
+25k,pore_center,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,PASS,
+25k,pore_center,HW1,H2O_HW1,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,pore_center,HW1,H2O_HW1,Total,0.0,0.0,0.0,0.0,PASS,
+25k,pore_center,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,PASS,
+25k,pore_center,HW2,H2O_HW2,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,pore_center,HW2,H2O_HW2,Total,0.0,0.0,0.0,0.0,PASS,
+25k,near_kerogen,OW,H2O_OW,VDW,0.0,0.0,0.0,,PASS,
+25k,near_kerogen,OW,H2O_OW,Coulomb,0.0,-0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,near_kerogen,OW,H2O_OW,Total,0.0,0.0,0.0,0.0,PASS,
+25k,near_kerogen,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,PASS,
+25k,near_kerogen,HW1,H2O_HW1,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,near_kerogen,HW1,H2O_HW1,Total,0.0,0.0,0.0,0.0,PASS,
+25k,near_kerogen,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,PASS,
+25k,near_kerogen,HW2,H2O_HW2,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,near_kerogen,HW2,H2O_HW2,Total,0.0,0.0,0.0,0.0,PASS,
+25k,near_illite,OW,H2O_OW,VDW,0.0,0.0,0.0,,PASS,
+25k,near_illite,OW,H2O_OW,Coulomb,0.0,-0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,near_illite,OW,H2O_OW,Total,0.0,0.0,0.0,0.0,PASS,
+25k,near_illite,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,PASS,
+25k,near_illite,HW1,H2O_HW1,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,near_illite,HW1,H2O_HW1,Total,0.0,0.0,0.0,0.0,PASS,
+25k,near_illite,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,PASS,
+25k,near_illite,HW2,H2O_HW2,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,near_illite,HW2,H2O_HW2,Total,0.0,0.0,0.0,0.0,PASS,
+25k,roughness_peak,OW,H2O_OW,VDW,-159.62017361987785,0.0,159.62017361987785,,FAIL,
+25k,roughness_peak,OW,H2O_OW,Coulomb,0.0,-1111327.2527702213,1111327.2527702213,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,roughness_peak,OW,H2O_OW,Total,-159.62017361987785,-1111327.2527702213,1111167.6325966015,6961.323292648176,FAIL,
+25k,roughness_peak,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,FAIL,
+25k,roughness_peak,HW1,H2O_HW1,Coulomb,0.0,548946.0649534714,548946.0649534714,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,roughness_peak,HW1,H2O_HW1,Total,0.0,548946.0649534714,548946.0649534714,548946.0649534714,FAIL,
+25k,roughness_peak,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,FAIL,
+25k,roughness_peak,HW2,H2O_HW2,Coulomb,0.0,449510.7212320611,449510.7212320611,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,roughness_peak,HW2,H2O_HW2,Total,0.0,449510.7212320611,449510.7212320611,449510.7212320611,FAIL,
+25k,roughness_valley,OW,H2O_OW,VDW,161740341154.20026,0.0,161740341154.20026,,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+25k,roughness_valley,OW,H2O_OW,Coulomb,0.0,-2886889.268591788,2886889.268591788,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,roughness_valley,OW,H2O_OW,Total,161740341154.20026,-2886889.268591788,161743228043.46884,1.0000178489129428,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+25k,roughness_valley,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,FAIL,
+25k,roughness_valley,HW1,H2O_HW1,Coulomb,0.0,1123055.255949676,1123055.255949676,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,roughness_valley,HW1,H2O_HW1,Total,0.0,1123055.255949676,1123055.255949676,1123055.255949676,FAIL,
+25k,roughness_valley,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,FAIL,
+25k,roughness_valley,HW2,H2O_HW2,Coulomb,0.0,1532735.5837170577,1532735.5837170577,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,roughness_valley,HW2,H2O_HW2,Total,0.0,1532735.5837170577,1532735.5837170577,1532735.5837170577,FAIL,
+25k,kerogen_illite_interface,OW,H2O_OW,VDW,0.0,0.0,0.0,,PASS,
+25k,kerogen_illite_interface,OW,H2O_OW,Coulomb,0.0,-0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,kerogen_illite_interface,OW,H2O_OW,Total,0.0,0.0,0.0,0.0,PASS,
+25k,kerogen_illite_interface,HW1,H2O_HW1,VDW,0.0,0.0,0.0,,PASS,
+25k,kerogen_illite_interface,HW1,H2O_HW1,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,kerogen_illite_interface,HW1,H2O_HW1,Total,0.0,0.0,0.0,0.0,PASS,
+25k,kerogen_illite_interface,HW2,H2O_HW2,VDW,0.0,0.0,0.0,,PASS,
+25k,kerogen_illite_interface,HW2,H2O_HW2,Coulomb,0.0,0.0,0.0,0.0,PASS,framework CIF charges are zero in frozen diagnostic inputs
+25k,kerogen_illite_interface,HW2,H2O_HW2,Total,0.0,0.0,0.0,0.0,PASS,

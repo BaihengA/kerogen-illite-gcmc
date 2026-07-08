@@ -1,2 +1,3 @@
-case,explicit_startup_time,grid_generation_time,grid_startup_time,time_to_component_initialization,RSS_max,CPU_median,status,notes
-NOT_RUN,,,,,,,,FAIL_PRECONDITION,DIAGNOSTIC_CARRIER_GATE failed; grid validation not run
+case,explicit_startup_time_s,grid_generation_time_s,grid_startup_time_s,time_to_component_stage_s,explicit_RSS_max_kB,grid_RSS_max_kB,explicit_CPU_percent,grid_CPU_percent,explicit_to_grid_speedup,explicit_exit_code,grid_exit_code,status,notes
+10k,3.23179292678833,5.582362651824951,8.740363121032715,,1789672,1791548,180.0,129.0,0.369754995534611,0,0,PASS,post-simulation reporting singular is tracked separately if present
+25k,18.34248971939087,25.20892024040222,32.471871852874756,,10656000,10657536,111.0,108.0,0.5648731863225493,0,0,PASS,post-simulation reporting singular is tracked separately if present

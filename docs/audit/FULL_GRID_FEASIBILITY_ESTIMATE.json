@@ -1,0 +1,11 @@
+{
+  "FULL_GRID_FEASIBILITY": "NO",
+  "basis": "full feasibility estimate is only allowed after GRID_GATE PASS; current GRID_GATE is FAIL",
+  "estimated_grid_dimensions_spacing_10A": [
+    17,
+    17,
+    19
+  ],
+  "production_ready": "NO",
+  "production_gcmc_run": "NO"
+}

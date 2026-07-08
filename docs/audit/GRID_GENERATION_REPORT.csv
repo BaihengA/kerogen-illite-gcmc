@@ -1,2 +1,3 @@
-case,grid_generation_time_s,grid_dimensions,grid_spacing,grid_file_size,memory,atom_types_covered,component_site_coverage,status,notes
-NOT_RUN,,,,,,,,FAIL_PRECONDITION,DIAGNOSTIC_CARRIER_GATE failed; grid validation not run
+case,framework_atoms,grid_dimensions,grid_spacing_A,grid_type,site_type_coverage,generation_time_s,CPU_percent,RSS_max_kB,grid_file_size_bytes,exit_code,status
+10k,10000,17x17x19,10.0,VDW+Coulomb,CH4;H2O_OW;H2O_HW1;H2O_HW2,5.582362651824951,144.0,1780736,1037448,0,PASS
+25k,25000,17x17x19,10.0,VDW+Coulomb,CH4;H2O_OW;H2O_HW1;H2O_HW2,25.20892024040222,107.0,10656000,1037448,0,PASS

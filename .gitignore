@@ -50,6 +50,9 @@ diagnostics/singular_matrix/**/stderr*.txt
 diagnostics/singular_matrix/**/Restart/
 diagnostics/singular_matrix/**/VTK/
 diagnostics/grid_validation/**/Output/
+diagnostics/grid_validation/**/*stdout.txt
+diagnostics/grid_validation/**/*stderr.txt
+diagnostics/grid_validation/**/*time.txt
 diagnostics/perf/*.data
 diagnostics/perf/*stdout.txt
 diagnostics/perf/*stderr.txt

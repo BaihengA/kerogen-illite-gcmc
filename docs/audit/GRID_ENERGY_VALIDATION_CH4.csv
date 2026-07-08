@@ -1,2 +1,13 @@
-point_id,x,y,z,region,explicit_energy,grid_energy,absolute_error,relative_error,status
-NOT_RUN,,,,,,,,FAIL_PRECONDITION,DIAGNOSTIC_CARRIER_GATE failed; grid validation not run
+case,point_id,x_A,y_A,z_A,region,E_explicit_VDW_K,E_explicit_Coulomb_K,E_explicit_Total_K,E_grid_VDW_K,E_grid_Coulomb_K,E_grid_Total_K,absolute_error_K,relative_error,status,notes
+10k,pore_center,85.105,83.34,95.73764281,pore center,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS,
+10k,near_kerogen,85.84319800004064,83.68376600000694,102.7073604922455,near kerogen,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS,
+10k,near_illite,89.105,83.34,99.73764281,near illite,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS,
+10k,roughness_peak,85.910000007899,80.32000000266001,157.15528562326318,roughness peak,-332.496387573925,0.0,-332.496387573925,0.0,0.0,0.0,332.496387573925,1.0,FAIL,
+10k,roughness_valley,84.47999999471301,79.289999992584,42.38999999119444,roughness valley,8541190334894.291,0.0,8541190334894.291,0.0,0.0,0.0,8541190334894.291,1.0,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+10k,kerogen_illite_interface,83.47409900002032,83.51188300000348,97.22250165112274,kerogen-illite interface,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS,
+25k,pore_center,85.105,83.34,95.73764281,pore center,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS,
+25k,near_kerogen,86.39159520002347,84.69601519996762,101.59698538499538,near kerogen,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS,
+25k,near_illite,89.105,83.34,99.73764281,near illite,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS,
+25k,roughness_peak,88.550000000819,80.37000000234,165.86528562841764,roughness peak,-321.8565259928391,0.0,-321.8565259928391,0.0,0.0,0.0,321.8565259928391,1.0,FAIL,
+25k,roughness_valley,85.04999999163701,83.51999999884801,33.390000000795105,roughness valley,596559295059.335,0.0,596559295059.335,0.0,0.0,0.0,596559295059.335,1.0,NEAR_WALL_CLASSIFIED,retained but excluded from PASS aggregation
+25k,kerogen_illite_interface,83.74829760001174,84.0180075999838,96.6673140974977,kerogen-illite interface,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,PASS,
