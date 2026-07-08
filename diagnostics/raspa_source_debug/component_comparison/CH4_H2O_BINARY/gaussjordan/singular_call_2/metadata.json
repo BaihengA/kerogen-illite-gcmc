@@ -1,0 +1,11 @@
+{
+  "call_id": 2,
+  "iteration_i": 0,
+  "irow": 1,
+  "icol": 1,
+  "pivot_value": 0,
+  "n": 2,
+  "m": 2,
+  "timestamp_unix": 1783473007,
+  "diagnostic_exit_code": 77
+}

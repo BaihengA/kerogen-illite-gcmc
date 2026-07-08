@@ -1,49 +1,29 @@
-﻿# GCMC Readiness Report
+# GCMC Readiness Report
 
-geometry_status: PASS
-raspa2_status: PASS
-methane_status: PASS
-water_model_status: PASS
-water_lj_status: PASS
-atomtype_coverage: PASS
-mixing_rule_status: PASS
-CH4_reservoir_boundary_status: PASS
-H2O_reservoir_boundary_status: PASS
-thermodynamic_boundary_status: PASS
-fugacity_mapping_status: PASS
-run_asset_manifest_status: PASS
-local_forcefield_coverage_status: PASS
-h2o_def_status: PASS
-framework_cif_status: PASS
-cif_staging_status: PASS
-smoke_preflight_status: PASS
-startup_behavior: ACTIVE_COMPUTE
-smoke_test_status: FAIL_TIMEOUT
-hotspot_profile_status: SYMBOL_HOTSPOTS_UNAVAILABLE
-framework_scaling_status: INSUFFICIENT_DATA_FOR_COMPLEXITY_FIT
-production_feasibility: NOT_FEASIBLE_AS_IS
-molecule_definition_gate: PASS
-grid_capability_status: SUPPORTED_BUT_FULL_NOT_FEASIBLE_DIRECT
-representative_patch_status: NOT_READY
-framework_representation_recommendation: GRID_DIAGNOSTIC_FIRST_NOT_PRODUCTION
-diagnostic_carrier_gate: FAIL
-grid_gate: FAIL
-grid_validation_status: NOT_RUN_PRECONDITION_FAILED
-patch_route: NOT_PROVEN
-production_ready: NO
+Current audited status after RASPA2 first-singular-matrix source-level localization:
 
-## Thermodynamic State
+- geometry_status: PASS
+- raspa2_status: PASS for parser and diagnostic executable availability
+- methane_status: PASS
+- water_status: PASS
+- binary molecule-definition parse: PASS
+- BINARY_COMPONENT_INIT_GATE: PASS
+- REPORTING_MATRIX_GATE: FAIL
+- GRID_GATE: NOT_RUN_THIS_ROUND
+- production_ready: NO
+- production GCMC run: NO
 
-- f_CH4_Pa: 16839028.2419113
-- f_H2O_Pa: 53255.717968868
-- water_activity: 1.0
-- reservoir_reference: external_real_water_reference
-- H2O RASPA effective mapping coefficient: 1.1266978304747
-- pore_water_model: OPLS 3-site water from 00_INPUT/H2O.pdb and 00_INPUT/H2O.itp
+Root-cause classification:
+- F. OTHER_PROVEN
 
-## Current Blocker
+Evidence:
+- Unmodified debug build reproduced `Matrix Inversion, Gauss-Jordan: Singular Matrix`.
+- The unmodified debug run exited with status `0`; the instrumented run exited with status `77` only because the diagnostic patch intentionally aborts at first zero pivot.
+- Instrumented `GaussJordan` captured first singular call as `call_id = 2`, `n = 2`, `m = 2`.
+- Backtrace: `PrintAverageTotalSystemEnergiesMC -> InverseRealMatrix -> GaussJordan`.
+- `A_original` is a 2 x 2 all-zero per-component number-fluctuation covariance matrix in post-simulation per-component heat-of-adsorption reporting.
+- CH4-only and H2O-only one-component diagnostic carriers do not trigger the singular matrix; the CH4-H2O binary diagnostic carrier does.
+- H2O geometry and inertia tensor are not degenerate.
 
-Canonical run assets and smoke preflight now pass. RASPA2 `simulate` starts and reads the RMS_0p300 framework CIF, but the canonical CH4-H2O 1+1 smoke does not complete within the 900 s `EXTENDED_SMOKE_ONLY` probe. The precise current failure class is `FAIL_TIMEOUT`, not missing assets, not reproduced exit 139, and not production output.
-
-Production remains blocked because only a completed canonical CH4-H2O smoke may set `production_ready: YES`.
-
+Production decision:
+- Binary component initialization is no longer classified as the blocker. The source-level singular matrix is proven in binary post-simulation reporting, and binary production readiness remains NO until the reporting/statistics behavior is handled without modifying validated thermodynamic boundaries or bypassing the audited model.

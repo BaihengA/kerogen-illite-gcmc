@@ -1,39 +1,53 @@
 # Singular Matrix Root Cause
 
-status: DIAGNOSTIC_CARRIER_GATE_FAIL
+status: SOURCE_LEVEL_LOCALIZED
 
-## Cell Matrix Result
+## Final Classification
 
-`docs/audit/DIAGNOSTIC_CELL_MATRIX_VALIDATION.csv` shows 10k, 25k, binary 10k carrier, and full canonical all share the same orthorhombic non-singular cell:
+Root-cause classification: F. OTHER_PROVEN
 
-- a = 170.21 A
-- b = 166.68 A
-- c = 191.47528562 A
-- alpha/beta/gamma = 90/90/90 deg
-- det(H) = 5432269.27434 A^3
-- inverse_status = PASS
+The first captured singular matrix is not a cell-geometry inverse, not H2O molecule geometry, not identity-change setup, not a molecule-definition parser failure, and not binary component initialization. It is a post-simulation reporting matrix generated only for multi-component systems.
 
-## Variant Evidence
+## Source-Level Evidence
 
-| variant | singular_matrix | notes |
-|---|---|---|
-| BINARY_NO_EWALD_LINE | True | removed ChargeMethod Ewald |
-| BINARY_CHARGE_NONE | True | ChargeMethod Ewald->ChargeMethod None |
-| BINARY_CREATE_ONE_EACH | True | CreateNumberOfMolecules 0->CreateNumberOfMolecules 1 |
-| BINARY_NO_ROTATION | True | removed RotationProbability |
-| BINARY_UNIT_FUGACITY | True | FugacityCoefficient 0.8439459552->FugacityCoefficient 1.0; FugacityCoefficient 1.1266978304747->FugacityCoefficient 1.0 |
-| BINARY_WITH_IDENTITY_CHANGE | True | official mixture identity-change controls added |
+- Unmodified diagnostic build reproduced `Matrix Inversion, Gauss-Jordan: Singular Matrix`.
+- Instrumented diagnostic build captured first singular call at `GaussJordan` call_id `2`.
+- Matrix dimensions: `n = 2`, `m = 2`.
+- `A_original`:
 
-## Root-Cause Classification
+```text
+0,0
+0,0
+```
 
-A. cell geometry: REJECTED
-B. coordinate conversion: REJECTED_BY_CELL_VALIDATION
-C. diagnostic cropping: NOT_SUPPORTED; cropping preserves the full non-singular cell and single-component tests pass
-D. RASPA internal matrix setup: MOST_LIKELY
-E. other: not excluded, but no evidence stronger than D
+- Rank: `0`.
+- Minimum singular value: `0`.
+- First pivot: `iteration_i = 0`, `irow = 1`, `icol = 1`, `pivot_value = 0`.
+- Backtrace: `PrintAverageTotalSystemEnergiesMC -> InverseRealMatrix -> GaussJordan`.
+- Source line context: `statistics.c` builds a `NumberOfComponents x NumberOfComponents` component-number fluctuation/covariance matrix and calls `InverseRealMatrix(matrix)` for per-component heat-of-adsorption reporting.
+- Unmodified diagnostic run exit status: `0`.
+- Instrumented diagnostic run exit status: `77`, by design, because the patch aborts at the first zero pivot.
 
-The singular matrix is triggered by binary-component setup after molecule definitions are parsed and after `Shift all potentials`. It persists when Ewald is removed, `ChargeMethod None` is used, initial molecule count is set to 1, rotation is removed, fugacity coefficients are set to 1, and official mixture identity-change controls are added. Therefore it is not fixed by diagnostic carrier cell reconstruction.
+## Component Comparison
 
-DIAGNOSTIC_CARRIER_GATE: FAIL
+See `docs/audit/GAUSSJORDAN_COMPONENT_COMPARISON.csv`.
 
-Because this gate failed, grid generation and energy validation were not run in this round.
+- CH4_ONLY: PASS_NO_SINGULAR
+- H2O_ONLY: PASS_NO_SINGULAR
+- CH4_H2O_BINARY: FAIL_SINGULAR
+
+## Rejected Causes
+
+- Cell matrix singularity: rejected by cell determinant/inverse validation.
+- H2O geometry degeneracy: rejected by `docs/audit/H2O_GEOMETRY_MATRIX_VALIDATION.md`.
+- Identity-change matrix: rejected because the failing backtrace does not enter identity-change setup.
+- Component definition parser: rejected because CH4/H2O molecule definitions parse and single-component carriers pass.
+- Binary component initialization: rejected because the unmodified binary diagnostic carrier proceeds through initialization and exits `0`; the singular matrix is reached from `PrintPostSimulationStatus`.
+
+## Gate Status
+
+- BINARY_COMPONENT_INIT_GATE: PASS
+- REPORTING_MATRIX_GATE: FAIL
+- GRID_GATE: NOT_RUN_THIS_ROUND
+- production_ready: NO
+- production GCMC run: NO

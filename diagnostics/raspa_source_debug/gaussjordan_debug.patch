@@ -1,0 +1,233 @@
+diff --git a/src/matrix.c b/src/matrix.c
+index df2ecff..5b560ab 100644
+--- a/src/matrix.c
++++ b/src/matrix.c
+@@ -37,9 +37,173 @@
+ #include <stdlib.h>
+ #include <stdio.h>
+ #include <math.h>
++#include <string.h>
++#include <time.h>
++#include <unistd.h>
++#include <sys/stat.h>
++#include <sys/types.h>
++#include <execinfo.h>
+ #include "matrix.h"
+ #include "utils.h"
+ 
++
++static long RASPA_GJ_DEBUG_CALL_ID=0;
++
++static void RASPA_GJ_MkdirIfNeeded(const char *path)
++{
++  struct stat st;
++  if(stat(path,&st)!=0) mkdir(path,0777);
++}
++
++static void RASPA_GJ_MkdirP(const char *path)
++{
++  char buffer[4096];
++  char *p;
++  size_t len;
++
++  if(path==NULL) return;
++  len=strlen(path);
++  if(len==0 || len>=sizeof(buffer)) return;
++  strcpy(buffer,path);
++  if(buffer[len-1]=='/') buffer[len-1]='\0';
++  for(p=buffer+1;*p;p++)
++  {
++    if(*p=='/')
++    {
++      *p='\0';
++      RASPA_GJ_MkdirIfNeeded(buffer);
++      *p='/';
++    }
++  }
++  RASPA_GJ_MkdirIfNeeded(buffer);
++}
++
++static REAL** RASPA_GJ_CopyMatrix(REAL_MATRIX x,int rows,int cols)
++{
++  int i,j;
++  REAL **copy;
++
++  copy=(REAL**)calloc(rows,sizeof(REAL*));
++  if(copy==NULL) return NULL;
++  for(i=0;i<rows;i++)
++  {
++    copy[i]=(REAL*)calloc(cols,sizeof(REAL));
++    if(copy[i]==NULL) return copy;
++    for(j=0;j<cols;j++) copy[i][j]=x.element[i][j];
++  }
++  return copy;
++}
++
++static void RASPA_GJ_FreeMatrixCopy(REAL **x,int rows)
++{
++  int i;
++
++  if(x==NULL) return;
++  for(i=0;i<rows;i++) free(x[i]);
++  free(x);
++}
++
++static void RASPA_GJ_DumpCopyCSV(const char *path,REAL **x,int rows,int cols)
++{
++  int i,j;
++  FILE *file;
++
++  file=fopen(path,"w");
++  if(file==NULL || x==NULL) return;
++  for(i=0;i<rows;i++)
++  {
++    for(j=0;j<cols;j++)
++    {
++      if(j>0) fprintf(file,",");
++      fprintf(file,"%.17g",(double)x[i][j]);
++    }
++    fprintf(file,"\n");
++  }
++  fclose(file);
++}
++
++static void RASPA_GJ_DumpLiveCSV(const char *path,REAL_MATRIX x,int rows,int cols)
++{
++  int i,j;
++  FILE *file;
++
++  file=fopen(path,"w");
++  if(file==NULL) return;
++  for(i=0;i<rows;i++)
++  {
++    for(j=0;j<cols;j++)
++    {
++      if(j>0) fprintf(file,",");
++      fprintf(file,"%.17g",(double)x.element[i][j]);
++    }
++    fprintf(file,"\n");
++  }
++  fclose(file);
++}
++
++static void RASPA_GJ_DumpBacktrace(const char *path)
++{
++  void *frames[128];
++  int nframes;
++  FILE *file;
++
++  file=fopen(path,"w");
++  if(file==NULL) return;
++  nframes=backtrace(frames,128);
++  backtrace_symbols_fd(frames,nframes,fileno(file));
++  fclose(file);
++}
++
++static void RASPA_GJ_DumpSingularEvidence(long call_id,int iteration_i,int irow,int icol,
++                                          REAL pivot_value,int n,int m,REAL_MATRIX a,
++                                          REAL **a_original,REAL **b_original,
++                                          const char *pivot_trace)
++{
++  char dir[4096],path[4096];
++  const char *base;
++  FILE *file;
++  time_t now;
++
++  base=getenv("RASPA_GJ_DEBUG_DIR");
++  if(base==NULL || strlen(base)==0) base="gaussjordan_debug";
++  snprintf(dir,sizeof(dir),"%s/singular_call_%ld",base,call_id);
++  RASPA_GJ_MkdirP(dir);
++
++  snprintf(path,sizeof(path),"%s/A_original.csv",dir);
++  RASPA_GJ_DumpCopyCSV(path,a_original,n,n);
++  snprintf(path,sizeof(path),"%s/A_at_failure.csv",dir);
++  RASPA_GJ_DumpLiveCSV(path,a,n,n);
++  snprintf(path,sizeof(path),"%s/B_original.csv",dir);
++  RASPA_GJ_DumpCopyCSV(path,b_original,n,m);
++  snprintf(path,sizeof(path),"%s/pivot_trace.csv",dir);
++  file=fopen(path,"w");
++  if(file!=NULL)
++  {
++    fprintf(file,"iteration_i,irow,icol,pivot_before_row_swap,big\n%s",pivot_trace);
++    fclose(file);
++  }
++  now=time(NULL);
++  snprintf(path,sizeof(path),"%s/metadata.json",dir);
++  file=fopen(path,"w");
++  if(file!=NULL)
++  {
++    fprintf(file,"{\n");
++    fprintf(file,"  \"call_id\": %ld,\n",call_id);
++    fprintf(file,"  \"iteration_i\": %d,\n",iteration_i);
++    fprintf(file,"  \"irow\": %d,\n",irow);
++    fprintf(file,"  \"icol\": %d,\n",icol);
++    fprintf(file,"  \"pivot_value\": %.17g,\n",(double)pivot_value);
++    fprintf(file,"  \"n\": %d,\n",n);
++    fprintf(file,"  \"m\": %d,\n",m);
++    fprintf(file,"  \"timestamp_unix\": %ld,\n",(long)now);
++    fprintf(file,"  \"diagnostic_exit_code\": 77\n");
++    fprintf(file,"}\n");
++    fclose(file);
++  }
++  snprintf(path,sizeof(path),"%s/BACKTRACE.txt",dir);
++  RASPA_GJ_DumpBacktrace(path);
++}
++
+ // Matrices are stored in "1D Fortran-style", so:
+ //   A_ij, i=0,M-1   j=0,N-1
+ //   v_k=m+n*N
+@@ -1434,10 +1598,20 @@ void GaussJordan(REAL_MATRIX a,int n,REAL_MATRIX b,int m)
+   int *indxc,*indxr,*ipiv;
+   int i,icol,irow,j,k,l,ll;
+   REAL big,dum,pivinv,temp;
++  long call_id;
++  REAL **a_original;
++  REAL **b_original;
++  char pivot_trace[65536];
++  size_t pivot_trace_len;
+ 
+   indxc=(int*)calloc(n,sizeof(int)); // The integer arrays ipiv, indxr, and indxc are used
+   indxr=(int*)calloc(n,sizeof(int)); // for bookkeeping on the pivoting.
+   ipiv=(int*)calloc(n,sizeof(int));
++  call_id=++RASPA_GJ_DEBUG_CALL_ID;
++  a_original=RASPA_GJ_CopyMatrix(a,n,n);
++  b_original=RASPA_GJ_CopyMatrix(b,n,m);
++  pivot_trace_len=0;
++  pivot_trace[0]='\0';
+ 
+   icol=irow=0;
+ 
+@@ -1464,6 +1638,11 @@ void GaussJordan(REAL_MATRIX a,int n,REAL_MATRIX b,int m)
+         }
+       }
+     }
++    if(pivot_trace_len<sizeof(pivot_trace))
++      pivot_trace_len+=(size_t)snprintf(pivot_trace+pivot_trace_len,sizeof(pivot_trace)-pivot_trace_len,
++                                        "%d,%d,%d,%.17g,%.17g\n",
++                                        i,irow,icol,(double)a.element[irow][icol],(double)big);
++
+     ++(ipiv[icol]);
+     // We now have the pivot element, so we interchange rows, if needed, to put the pivot
+     // element on the diagonal. The columns are not physically interchanged, only relabeled:
+@@ -1482,6 +1661,12 @@ void GaussJordan(REAL_MATRIX a,int n,REAL_MATRIX b,int m)
+     if(a.element[icol][icol]==0.0)
+     {
+       fprintf(stderr, "Matrix Inversion, Gauss-Jordan: Singular Matrix\n");
++      RASPA_GJ_DumpSingularEvidence(call_id,i,irow,icol,a.element[icol][icol],
++                                    n,m,a,a_original,b_original,pivot_trace);
++      RASPA_GJ_FreeMatrixCopy(a_original,n);
++      RASPA_GJ_FreeMatrixCopy(b_original,n);
++      free(ipiv); free(indxr); free(indxc);
++      exit(77);
+     }
+     pivinv=1.0/a.element[icol][icol];
+     a.element[icol][icol]=1.0;
+@@ -1509,6 +1694,8 @@ void GaussJordan(REAL_MATRIX a,int n,REAL_MATRIX b,int m)
+         SWAP(a.element[k][indxr[l]],a.element[k][indxc[l]],temp);
+   }
+   free(ipiv);
++  RASPA_GJ_FreeMatrixCopy(a_original,n);
++  RASPA_GJ_FreeMatrixCopy(b_original,n);
+   free(indxr);
+   free(indxc);
+ }
